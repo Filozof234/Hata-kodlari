@@ -1,114 +1,1622 @@
 [
   {
-    "hata_kodu": "E1",
-    "marka": "Demirdöküm",
-    "cihaz": "Kombi",
-    "aciklama": "Düşük su basıncı arızası. Sistemde yeterli su dolaşımı sağlanamıyor.",
-    "cozum": "Kombinin su basıncını 1.5 bar seviyesine getirin.",
-    "detayli_cozum": "1. Kombinizin alt kısmına eğilip su doldurma musluğunu (genellikle siyah veya mavi renkli plastik bir vanadır) bulun.\n2. Vanayı yavaşça saat yönünün tersine çevirerek açın. Su sesi duymaya başlayacaksınız.\n3. Gözünüz kombinin üzerindeki basınç göstergesinde (manometre) olsun.\n4. İbre 1.5 ile 2.0 bar arasına geldiğinde vanayı saat yönünde çevirerek sıkıca kapatın.\n5. Kombiniz otomatik olarak çalışmaya başlayacaktır, başlamazsa panelden 'Reset' tuşuna 3 saniye basılı tutun."
-  },
-  {
-    "hata_kodu": "F37",
-    "marka": "Baymak",
-    "cihaz": "Kombi",
-    "aciklama": "Tesisat su basıncı düşük.",
-    "cozum": "Doldurma musluğu ile basıncı 1.5 bar'a yükseltin.",
-    "detayli_cozum": "Kombinin altındaki doldurma vanasını sola çevirerek açın. Manometredeki ibre 1.5-2.0 arasına gelince sağa çevirip kapatın."
-  },
-  {
     "hata_kodu": "E18",
     "marka": "Bosch",
     "cihaz": "Çamaşır Makinesi",
-    "aciklama": "Su boşaltma hatası. Makine suyu tahliye edemiyor.",
-    "cozum": "Pompa filtresini temizleyin ve tahliye hortumunu kontrol edin.",
-    "detayli_cozum": "1. Makinenin fişini çekin.\n2. Sağ alt köşedeki kapakçığı açın ve tahliye hortumundan kalan suyu bir kaba boşaltın.\n3. Pompa filtresini saat yönünün tersine çevirerek çıkarın.\n4. Filtrenin içindeki cisimleri (bozuk para, toka vb.) temizleyin.\n5. Pervanenin rahat dönüp dönmediğini kontrol edin.\n6. Filtreyi yerine takıp iyice sıkın. Ayrıca arkadaki gider hortumunun ezilmemiş olduğundan emin olun."
+    "aciklama": "Su boşaltma (tahliye) hatası.",
+    "cozum": "Pompa filtresini temizleyin.",
+    "detayli_cozum": "1. Makinenin sağ alt köşesindeki kapağı açın.\n2. Tahliye hortumundaki suyu bir kaba boşaltın.\n3. Filtreyi sola çevirerek çıkarın ve içindeki yabancı cisimleri (bozuk para, toka vb.) temizleyin.\n4. Gider hortumunun bükülmediğinden emin olun."
   },
   {
-    "hata_kodu": "E04",
-    "marka": "Beko",
+    "hata_kodu": "E16",
+    "marka": "Bosch",
     "cihaz": "Çamaşır Makinesi",
-    "aciklama": "Su taşıp tabana dökülmüş veya su kesintisi var.",
-    "cozum": "Su vanalarını kontrol edin, ventilde veya hortumda sorun olabilir.",
-    "detayli_cozum": "Çeşmelerden su geldiğinden emin olun. Giriş hortumunun makineye ve çeşmeye bağlanan kısımlarındaki filtrelerin temiz olduğunu kontrol edin. Sorun devam ederse su giriş ventili arızalı olabilir, servis gerektirir."
+    "aciklama": "Kapak açık uyarısı.",
+    "cozum": "Makine kapağını tam kapatın.",
+    "detayli_cozum": "Makinenin kapağı tam kilitlenmemiş. Kapağı açıp araya çamaşır sıkışıp sıkışmadığını kontrol edin ve 'tık' sesini duyana kadar sertçe itin. Düzelmezse kapı kilidi arızalanmış olabilir."
+  },
+  {
+    "hata_kodu": "E17",
+    "marka": "Bosch",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su alma süresi aşıldı (Su gelmiyor).",
+    "cozum": "Su vanasını ve filtreleri kontrol edin.",
+    "detayli_cozum": "Su vanasının tam açık olduğundan emin olun. Hortumun makineye girdiği yerdeki küçük süzgeci (filtreyi) diş fırçası ile temizleyin. Su basıncınız düşük olabilir."
   },
   {
     "hata_kodu": "E15",
     "marka": "Siemens",
     "cihaz": "Bulaşık Makinesi",
-    "aciklama": "Taban tepsisinde su birikmesi. AquaStop devreye girdi.",
-    "cozum": "Su sızıntısı var. Cihazı eğerek suyu boşaltmayı deneyin.",
-    "detayli_cozum": "Cihazın tabanındaki güvenlik şamandırası su algılamış.\n1. Cihazın fişini çekin ve su giriş vanasını kapatın.\n2. Makineyi öne doğru yaklaşık 45 derece eğerek tabanda biriken suyun akmasını sağlayın.\n3. Kuruduktan sonra çalıştırın. Eğer hata hemen veya bir süre sonra tekrarlarsa iç aksamda bir sızıntı vardır (hortum yırtığı, pompa contası vb.), yetkili servis çağrılmalıdır."
+    "aciklama": "Tabanda su sızıntısı (AquaStop devrede).",
+    "cozum": "Makineyi öne eğip suyu boşaltın.",
+    "detayli_cozum": "Makine tabanına su sızdırmış ve emniyet şamandırası devreye girmiş. Fişi çekin, makineyi 45 derece öne doğru eğerek altındaki suyun boşalmasını sağlayın. Kuruduktan sonra tekrar çalıştırın, sürekli tekrarlarsa iç kaçak vardır, servis çağırın."
+  },
+  {
+    "hata_kodu": "E24",
+    "marka": "Siemens",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Su tahliye edilemiyor.",
+    "cozum": "Gider hortumunu ve filtreyi temizleyin.",
+    "detayli_cozum": "İç kısımdaki silindirik filtreyi çıkarıp yıkayın. Pompa kapağını (genellikle beyaz plastik bir parça) çıkarıp pervaneye cam veya çekirdek sıkışıp sıkışmadığına bakın. Lavabo gideri tıkanmış olabilir, kontrol edin."
+  },
+  {
+    "hata_kodu": "E27",
+    "marka": "Bosch",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Düşük voltaj uyarısı.",
+    "cozum": "Şebeke gerilimini kontrol edin.",
+    "detayli_cozum": "Evinize gelen elektrik voltajı cihazın çalışması için yetersiz (genelde 170V altına düştüğünde görülür). Voltaj dalgalanması geçene kadar bekleyin. Sürekli oluyorsa regülatör taktırmanız gerekebilir."
+  },
+  {
+    "hata_kodu": "4E",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su besleme hatası (Makine su alamıyor).",
+    "cozum": "Muslukların açık olduğunu doğrulayın.",
+    "detayli_cozum": "Muslukları sonuna kadar açın. Su hortumunda bükülme olup olmadığına bakın. Hortum girişindeki tel örgü filtreleri çıkarıp temizleyin."
+  },
+  {
+    "hata_kodu": "5E",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su boşaltma arızası.",
+    "cozum": "Tahliye filtresini temizleyin.",
+    "detayli_cozum": "Makinenin altındaki filtre kapağını açın, suyu tahliye edip içindeki yabancı maddeleri temizleyin. Tahliye hortumu çok yüksekte veya çok alçakta olmamalıdır."
+  },
+  {
+    "hata_kodu": "UE",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Dengesiz yük hatası.",
+    "cozum": "Çamaşırları makineye dengeli dağıtın.",
+    "detayli_cozum": "Makine sıkmaya geçerken yükün tek tarafa toplandığını algılamış. Kapağı açın, çamaşırları (özellikle bornoz, battaniye gibi ağır eşyaları) elle dağıtın ve sıkma programını tekrar başlatın."
+  },
+  {
+    "hata_kodu": "dE",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Kapak açık hatası.",
+    "cozum": "Kapağı yeniden sertçe kapatın.",
+    "detayli_cozum": "Kapak kilitlenemiyor. Çamaşırların kapağa baskı yapmadığından emin olun. Kapak mandalının sağlam olup olmadığını kontrol edin."
+  },
+  {
+    "hata_kodu": "LE",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su sızıntısı uyarısı.",
+    "cozum": "Hortumları ve deterjan çekmecesini kontrol edin.",
+    "detayli_cozum": "Tahliye hortumu düşmüş olabilir. Deterjan çekmecesi çok doluysa veya tıkanmışsa dışarı köpük/su taşıyor olabilir. Temizleyip yeniden deneyin."
   },
   {
     "hata_kodu": "IE",
     "marka": "LG",
-    "cihaz": "Bulaşık Makinesi",
-    "aciklama": "Su giriş hatası. Yeterli su alınamıyor.",
-    "cozum": "Su vanalarının açık olduğundan ve hortumun bükülmediğinden emin olun.",
-    "detayli_cozum": "Su vanasını tam açın. Su giriş hortumunun bükülmüş veya ezilmiş olup olmadığını kontrol edin. Hortumun makineye bağlandığı yerdeki küçük süzgeci (filtre) fırça ile temizleyin."
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su girişi hatası (Water Inlet Error).",
+    "cozum": "Vana ve su hortumu filtrelerini kontrol edin.",
+    "detayli_cozum": "Şebeke suyunun kesik olmadığını, vananın açık olduğunu kontrol edin. Giriş hortumunun bükülmediğinden ve giriş valfi süzgecinin temiz olduğundan emin olun."
   },
   {
-    "hata_kodu": "CF",
-    "marka": "Samsung",
+    "hata_kodu": "OE",
+    "marka": "LG",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Suyu boşaltamama hatası.",
+    "cozum": "Pompa filtresini ve gideri temizleyin.",
+    "detayli_cozum": "Sağ alt köşedeki tahliye filtresi tıkanmış olabilir. Temizleyin. Duvar giderine bağlıysa, gider borusunun tıkalı olup olmadığını kontrol edin."
+  },
+  {
+    "hata_kodu": "UE",
+    "marka": "LG",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Dengesiz yük tespit edildi.",
+    "cozum": "Makinenin ayaklarını teraziye alın ve çamaşırları düzeltin.",
+    "detayli_cozum": "Çok az veya çok fazla çamaşır atmış olabilirsiniz. Çamaşırları elle dağıtın. Ayrıca makinenin yere sağlam ve düz bastığından (ayak ayarı) emin olun."
+  },
+  {
+    "hata_kodu": "tE",
+    "marka": "LG",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Isıtma/Termistör arızası.",
+    "cozum": "Sensör veya rezistans arızası, servis çağırın.",
+    "detayli_cozum": "Makine su sıcaklığını ölçemiyor veya suyu ısıtamıyor. Kireçlenme kaynaklı olabilir. Kullanıcı müdahalesi zordur, rezistans veya NTC sensör değişimi için servis gereklidir."
+  },
+  {
+    "hata_kodu": "E01",
+    "marka": "Beko",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Kapak kilidi arızası.",
+    "cozum": "Kapağı kapatın veya kilit parçasını kontrol ettirin.",
+    "detayli_cozum": "Kapak düzgün kapatılmamış veya kapı kilit mekanizması arızalanmış (PTC kilidi yanmış olabilir). Kapağı sertçe kapatıp başlat tuşuna basın, düzelmezse kilit değişimi gerekir."
+  },
+  {
+    "hata_kodu": "E02",
+    "marka": "Beko",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su alma hatası.",
+    "cozum": "Suların kesik olmadığını kontrol edin.",
+    "detayli_cozum": "Çeşme kapalı olabilir, su basıncı çok düşük olabilir veya giriş hortumu bükülmüş olabilir. Arkadaki filtreleri temizleyin."
+  },
+  {
+    "hata_kodu": "E03",
+    "marka": "Beko",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Tahliye (Su boşaltma) hatası.",
+    "cozum": "Filtreyi temizleyin.",
+    "detayli_cozum": "Makine içindeki suyu dışarı atamıyor. Alt pompa filtresini söküp yıkayın, içindeki pervane kısmına takılan iplik veya cisimleri çıkarın."
+  },
+  {
+    "hata_kodu": "F37",
+    "marka": "Demirdöküm",
+    "cihaz": "Kombi",
+    "aciklama": "Tesisat su basıncı düşük.",
+    "cozum": "Doldurma musluğu ile basıncı 1.5 bar yapın.",
+    "detayli_cozum": "Kombinin altındaki siyah veya mavi renkli doldurma vanasını sola doğru (saatin tersi) çevirerek açın. Manometrede (göstergede) ibre 1.5 - 2.0 bar arasına gelince vanayı sağa çevirip iyice kapatın."
+  },
+  {
+    "hata_kodu": "F28",
+    "marka": "Vaillant",
+    "cihaz": "Kombi",
+    "aciklama": "Ateşleme başarısız (Gaz yok veya ateşlemiyor).",
+    "cozum": "Gaz vanasını kontrol edip kombinizi resetleyin.",
+    "detayli_cozum": "Dairenize veya kombiye gaz gelmiyor olabilir. Ocağınızı yakarak gaz olup olmadığını kontrol edin. Gaz varsa vanaların açık (boruyla paralel) olduğundan emin olun ve kombiyi alev üzeri çarpı işaretli tuşa (veya reset) basarak sıfırlayın."
+  },
+  {
+    "hata_kodu": "F29",
+    "marka": "Vaillant",
+    "cihaz": "Kombi",
+    "aciklama": "Çalışırken alev sönmesi.",
+    "cozum": "Gaz kesintisi veya rüzgar tepmesi olabilir, resetleyin.",
+    "detayli_cozum": "Kombi yanarken birden alev kopması yaşanmış. Rüzgarlı havalarda bacadan geri tepme olabilir veya gaz sayacınız arızalanmış olabilir. Resetleyip gözlemleyin."
+  },
+  {
+    "hata_kodu": "F22",
+    "marka": "Vaillant",
+    "cihaz": "Kombi",
+    "aciklama": "Düşük su basıncı arızası.",
+    "cozum": "Kombiye su basmanız gereklidir.",
+    "detayli_cozum": "Kombi içindeki su basıncı 1 barın altına düşmüş. Cihazın altındaki doldurma musluğunu açarak su basıncını 1.5 bar seviyesine ayarlayın ve kapatın."
+  },
+  {
+    "hata_kodu": "A01",
+    "marka": "ECA",
+    "cihaz": "Kombi",
+    "aciklama": "Ateşleme arızası (Alev yok).",
+    "cozum": "Gazı kontrol edin ve reset atın.",
+    "detayli_cozum": "Gaz vanalarının açık olduğunu teyit edin. 'R' (Reset) tuşuna veya konum düğmesini 'R' konumuna getirip 3 saniye bekleyerek cihazı sıfırlayın."
+  },
+  {
+    "hata_kodu": "A03",
+    "marka": "ECA",
+    "cihaz": "Kombi",
+    "aciklama": "Aşırı ısınma emniyet termostatı devrede.",
+    "cozum": "Petek vanalarının açık olduğundan emin olun.",
+    "detayli_cozum": "Kombi içindeki su çok ısınmış ve sistem kendini kilitlemiş. En az 3 adet petek vanasının açık olduğundan emin olun. Kombi soğuduktan sonra Reset işlemi uygulayın."
+  },
+  {
+    "hata_kodu": "E01",
+    "marka": "Baymak",
+    "cihaz": "Kombi",
+    "aciklama": "Başarısız ateşleme (Alev oluşmadı).",
+    "cozum": "Gaz vanalarını açıp R tuşu ile resetleyin.",
+    "detayli_cozum": "Dairenizde gaz olduğundan ve gaz saati yanındaki vananın açık olduğundan emin olun. Daha sonra kombi üzerindeki 'R' düğmesine 2-3 saniye basılı tutarak reset atın."
+  },
+  {
+    "hata_kodu": "E03",
+    "marka": "Baymak",
+    "cihaz": "Kombi",
+    "aciklama": "Atık gaz (Baca/Fan) sistemi arızası.",
+    "cozum": "Baca borusunu kontrol edin, cihazı kapatıp açın.",
+    "detayli_cozum": "Kombi bacası yerinden çıkmış veya fan motoru arızalanmış olabilir. Baca çıkışını engelleyen poşet/kuş yuvası gibi bir durum olup olmadığını dışarıdan kontrol edin. Servis gerekebilir."
+  },
+  {
+    "hata_kodu": "E10",
+    "marka": "Baymak",
+    "cihaz": "Kombi",
+    "aciklama": "Tesisat su basınç eksikliği.",
+    "cozum": "Basıncı 1.5 bara tamamlayın.",
+    "detayli_cozum": "Su basıncı düşmüş. Kombi altındaki doldurma musluğu yardımıyla cihaza su alın. Gösterge 1.5 olunca vanayı kapatın."
+  },
+  {
+    "hata_kodu": "U0",
+    "marka": "Daikin",
     "cihaz": "Klima",
-    "aciklama": "İletişim arızası. Filtre temizlik uyarısı.",
-    "cozum": "İç ünite filtrelerini temizleyip kumandadan resetleyin.",
-    "detayli_cozum": "Bu bir hata kodundan ziyade filtre temizlik zamanının geldiğini bildiren uyarıdır.\n1. Klimayı kapatın ve kapağı açıp toz filtrelerini çıkarın.\n2. Filtreleri ılık suyla yıkayıp gölgede kurutun.\n3. Yerine taktıktan sonra kumanda üzerinden 'Options' menüsünden 'Filter Reset' veya ilgili düğmeye basarak uyarıyı silin."
+    "aciklama": "Sistemde soğutucu gaz eksikliği.",
+    "cozum": "Gaz kaçağı tespiti ve şarjı için servis çağırın.",
+    "detayli_cozum": "Klima sistemindeki R410A veya R32 gazı azalmış. Rekor bağlantılarında kaçak olabilir. Kullanıcı müdahalesi mümkün değildir, yetkili servis gaz ölçümü yapmalıdır."
+  },
+  {
+    "hata_kodu": "U4",
+    "marka": "Daikin",
+    "cihaz": "Klima",
+    "aciklama": "İç ve Dış ünite iletişim hatası.",
+    "cozum": "Elektrik şalterini kapatıp açın.",
+    "detayli_cozum": "İç ünite ve dış ünite arasındaki sinyal kablosunda kopukluk veya voltaj kaynaklı haberleşme sorunu var. Sigortayı indirip 5 dk bekleyin ve geri kaldırın. Devam ederse elektronik kart arızasıdır."
   },
   {
     "hata_kodu": "CH05",
     "marka": "LG",
     "cihaz": "Klima",
-    "aciklama": "İç ve dış ünite haberleşme hatası.",
-    "cozum": "Sinyal kabloları kontrol edilmeli ve cihaz sigortadan resetlenmelidir.",
-    "detayli_cozum": "1. Klimanın bağlı olduğu şalteri kapatıp 5-10 dakika bekleyin.\n2. Tekrar açtığınızda düzelmiyorsa sinyal kablolarında kopukluk veya kart arızası olabilir. Servis müdahalesi gereklidir."
+    "aciklama": "Haberleşme hatası (İletişim kopuk).",
+    "cozum": "Klimayı sigortasından resetleyin.",
+    "detayli_cozum": "İç ve dış ünite birbirini göremiyor. Elektrik gidip gelmelerinde sık yaşanır. Cihazın şalterini kapatın, 10 dakika bekleyip açın."
   },
   {
-    "hata_kodu": "E4",
-    "marka": "Arçelik",
-    "cihaz": "Buzdolabı",
-    "aciklama": "Defrost sensörü arızası.",
-    "cozum": "Manuel defrost deneyin veya sensör değişimi yaptırın.",
-    "detayli_cozum": "Cihazın fişini çekip kapıları açık şekilde 24 saat bekleterek tam manuel defrost yapın. Fişi taktıktan sonra hata devam ederse, sensör veya anakart değişimi için servis çağrılmalıdır."
+    "hata_kodu": "CH38",
+    "marka": "LG",
+    "cihaz": "Klima",
+    "aciklama": "Soğutucu akışkan (Gaz) kaçağı tespit edildi.",
+    "cozum": "Klimayı çalıştırmayın, servis çağırın.",
+    "detayli_cozum": "Sensörler sistemde yeterli gaz olmadığını saptadı. Klimayı bu şekilde çalıştırmak kompresörün yanmasına sebep olabilir. Servis çağırarak kaçak kontrolü yaptırın."
+  },
+  {
+    "hata_kodu": "CF",
+    "marka": "Samsung",
+    "cihaz": "Klima",
+    "aciklama": "Filtre temizlik uyarısı.",
+    "cozum": "Filtreleri temizleyip uyarıyı silin.",
+    "detayli_cozum": "Klimanın iç ünitesindeki toz filtrelerini söküp ılık suyla yıkayın. Kurutup taktıktan sonra kumandadan 'Options' veya ilgili düğmeye basarak filtre sıfırlaması yapın."
   },
   {
     "hata_kodu": "22E",
     "marka": "Samsung",
     "cihaz": "Buzdolabı",
-    "aciklama": "Soğutucu bölüm fan motoru hatası.",
-    "cozum": "Buzlanma fanın dönmesini engelliyor olabilir. Defrost yapın.",
-    "detayli_cozum": "Fan motoru buzlanmadan dolayı sıkışmış olabilir veya motorun kendisi arızalanmıştır. Dolabı boşaltıp fişini çekerek 24 saat kapakları açık bekletin. Düzelmezse fan motoru değişimi gerekir."
+    "aciklama": "Soğutucu bölüm fan hatası.",
+    "cozum": "Cihaza tam manuel defrost uygulayın.",
+    "detayli_cozum": "Buzdolabının içindeki fan buzlanmadan dolayı sıkışmış ve dönemiyor. Dolabın fişini çekin, kapaklarını açık bırakarak 24 saat erimesini bekleyin. Erime sonrası fişi takın, sorun devam ederse fan motoru arızalıdır."
   },
   {
-    "hata_kodu": "Yok",
+    "hata_kodu": "33E",
+    "marka": "Samsung",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Buz makinesi ısıtıcı boru hatası.",
+    "cozum": "Buz yapıcı bölümünü temizleyin veya servise başvurun.",
+    "detayli_cozum": "Otomatik buz yapıcının ısıtıcısı çalışmıyor ve buz kalıptan düşemiyor. Cihazı kapatıp buzluğunun tamamen erimesini sağlayın."
+  },
+  {
+    "hata_kodu": "FF",
+    "marka": "LG",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Dondurucu (Freezer) fan arızası.",
+    "cozum": "Fan motoru sıkışmış olabilir, dolabı eritin.",
+    "detayli_cozum": "Dondurucu kısımdaki fan buzlanma veya arıza nedeniyle durmuş. Dolabın soğutması tamamen durabilir. Fişi çekip 24 saat kapağı açık bekleterek buzların erimesini sağlayın."
+  },
+  {
+    "hata_kodu": "E4",
+    "marka": "Arçelik",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Isıtıcı (Defrost) sensör arızası.",
+    "cozum": "Kullanıcı müdahalesi yetersizdir, parça değişimi gerekir.",
+    "detayli_cozum": "Buzdolabı otomatik kar eritme işlemine geçemiyor ve arka paneller kar tutuyor. Sensör direnç değerini kaybetmiş, servis çağırarak sensör değişimi yaptırmalısınız."
+  },
+  {
+    "hata_kodu": "E8",
+    "marka": "Arçelik",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Buzmatik (Icemaker) sensör hatası.",
+    "cozum": "Buzmatiği kapatın ve servis çağırın.",
+    "detayli_cozum": "Buzmatik bölümündeki sensör arızalı. Buz yapma fonksiyonunu panelden kapatıp dolabı normal soğutucu olarak kullanmaya devam edebilirsiniz, kalıcı çözüm için sensör değişmeli."
+  },
+  {
+    "hata_kodu": "E01",
+    "marka": "Vestel",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Kapak açık veya kilitlenemiyor.",
+    "cozum": "Kapağı iterek kapatmayı deneyin.",
+    "detayli_cozum": "Kapak düzgün oturtulmamış. Tamburun içinde kapağa baskı yapan çamaşırları içeri doğru itin ve kapağı sıkıca kapatın."
+  },
+  {
+    "hata_kodu": "E02",
+    "marka": "Vestel",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Yetersiz su girişi.",
+    "cozum": "Musluğu kontrol edin ve filtreleri temizleyin.",
+    "detayli_cozum": "Makinenize yeterli hızda su gelmiyor. Şebeke suyunuzu ve vana açıklığını kontrol edin. Arka kısımdaki mavi filtreyi fırçayla yıkayın."
+  },
+  {
+    "hata_kodu": "E03",
+    "marka": "Vestel",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Tahliye pompası arızası.",
+    "cozum": "Alt pompayı temizleyin.",
+    "detayli_cozum": "Sağ alttaki tahliye filtresi tıkalı. İçinden madeni para veya iplik yumakları çıkabilir, çıkarın ve kapağı geri sıkın."
+  },
+  {
+    "hata_kodu": "E04",
+    "marka": "Vestel",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Aşırı su / Taşma uyarısı.",
+    "cozum": "Makine suyunu tahliye edene kadar bekleyin.",
+    "detayli_cozum": "Makine gereğinden fazla su aldı ve emniyet için taşma sistemini devreye soktu. Cihaz kendi kendine su boşaltacaktır. Devam ederse presostat (su seviye şalteri) bozulmuştur."
+  },
+  {
+    "hata_kodu": "Kırmızı Işık Yanıp Sönüyor",
     "marka": "Dyson",
     "cihaz": "Şarjlı Süpürge",
-    "aciklama": "Mavi ışık yanıp sönüyor ve cihaz çalışmıyor.",
-    "cozum": "Filtre yıkanmalı, batarya şarj edilmeli veya tıkanıklık giderilmeli.",
-    "detayli_cozum": "1. Şarjın dolu olduğundan emin olun.\n2. Filtrenin (mor renkli kısım) temiz ve tamamen kuru olduğundan emin olun (yıkadıktan sonra en az 24 saat kurutulmalı).\n3. Boruda veya motor girişinde tıkanıklık yapabilecek cisimleri temizleyin."
+    "aciklama": "Batarya veya motor arızası.",
+    "cozum": "Batarya ömrü bitmiş olabilir, değişim gerekir.",
+    "detayli_cozum": "Dyson cihazlarda kırmızı ışığın belli sayıda yanıp sönmesi (flashing red) genellikle bataryanın hücrelerinin öldüğünü ve artık şarj tutmadığını gösterir. Orijinal batarya değişimi yapılması gereklidir."
   },
   {
     "hata_kodu": "Error 1",
-    "marka": "Xiaomi",
+    "marka": "Roborock",
     "cihaz": "Robot Süpürge",
     "aciklama": "Lazer sensör (LDS) hatası.",
-    "cozum": "Üstteki lazer kulesinin serbestçe döndüğünden emin olun.",
-    "detayli_cozum": "Robotun üstündeki yuvarlak çıkıntı (LDS sensörü) sıkışmış olabilir. Parmağınızla yavaşça çevirerek rahat döndüğünden emin olun. İçine toz veya saç kaçmışsa üfleyerek temizlemeyi deneyin."
+    "cozum": "Lazer kulesinin serbest döndüğünü kontrol edin.",
+    "detayli_cozum": "Süpürgenin üstündeki yuvarlak lazer sensörü dönmüyor veya engellenmiş. Parmağınızla yavaşça sağa sola çevirin, içine toz veya saç kaçtıysa cımbızla alın veya kuvvetlice üfleyin."
+  },
+  {
+    "hata_kodu": "Error 4",
+    "marka": "Roborock",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Uçurum (Düşme) sensörleri kirli.",
+    "cozum": "Alt kısımdaki sensörleri silin.",
+    "detayli_cozum": "Robot süpürgenin alt kısmında merdivenden düşmesini engelleyen cam gibi küçük pencereler (sensörler) vardır. Bunlar tozlandığı için cihaz havada veya boşlukta olduğunu sanıyor. Kuru bir bezle silin."
+  },
+  {
+    "hata_kodu": "Error 8",
+    "marka": "Roborock",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Ana fırça veya tekerlek engellendi.",
+    "cozum": "Ana fırçaya dolanan saçları temizleyin.",
+    "detayli_cozum": "Alt kısımdaki turuncu-siyah ana fırçaya halı püskülü, şarj kablosu veya saç dolanmış. Fırçayı çıkarın, kenarlarındaki rulmanları söküp etrafına dolanan saçları kesin."
+  },
+  {
+    "hata_kodu": "E1",
+    "marka": "Philips",
+    "cihaz": "Airfryer",
+    "aciklama": "Sıcaklık NTC sensörü arızası.",
+    "cozum": "Cihazın bağlantısı kopmuş, servislik durum.",
+    "detayli_cozum": "Cihazın içindeki sıcaklığı ölçen kabloda kopukluk var. Bu durum cihazın düşmesiyle veya aşırı kullanımla olur. Kullanıcı bunu evde çözemez, servis müdahalesi şarttır."
   },
   {
     "hata_kodu": "E2",
     "marka": "Philips",
     "cihaz": "Airfryer",
-    "aciklama": "Sıcaklık sensörü veya fan hatası.",
-    "cozum": "Cihazın soğumasını bekleyin ve etrafında boşluk olduğundan emin olun.",
-    "detayli_cozum": "Cihaz aşırı ısınmış olabilir. Fişini çekip en az 30 dakika soğumasını bekleyin. Cihazın arkasında ve yanlarında hava akışını sağlayacak yeterli boşluk (en az 10 cm) olduğundan emin olup tekrar çalıştırın."
+    "aciklama": "Aşırı ısınma emniyeti.",
+    "cozum": "Cihazı fişten çekip 30 dakika soğumaya bırakın.",
+    "detayli_cozum": "Airfryer çok uzun süre yüksek ısıda çalışmış veya arka hava çıkışı duvara çok yakın kaldığı için sıcak havayı atamamış. Fişini çekip en az yarım saat dinlendirin."
   },
   {
-    "hata_kodu": "Blinking Red",
+    "hata_kodu": "Error 5",
+    "marka": "Xiaomi",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Ana fırça (Main Brush) sıkışması.",
+    "cozum": "Fırçayı söküp etrafını temizleyin.",
+    "detayli_cozum": "Robotun altındaki rulo fırça dönemiyor. Fırça koruyucusunu iki mandalına basarak çıkarın, fırçayı yerinden alın ve etrafına dolanan ipleri/saçları temizleme bıçağıyla kesin."
+  },
+  {
+    "hata_kodu": "F05",
+    "marka": "Hotpoint Ariston",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su boşaltma problemi (Presostat/Pompa).",
+    "cozum": "Filtreyi temizleyin veya atık su borusunu kontrol edin.",
+    "detayli_cozum": "Makine içindeki suyu atamadığı için kapağı açmıyor ve hataya düşüyor. Ön alt kapağı açarak siyah filtreyi yavaşça sökün (su akacaktır, önlem alın) ve içindeki tıkanıklığı giderin."
+  },
+  {
+    "hata_kodu": "H20",
+    "marka": "Hotpoint Ariston",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su besleme zaman aşımı.",
+    "cozum": "Su vanalarını kontrol edin.",
+    "detayli_cozum": "Cihaz gereken sürede yeterli suyu alamadı. Suların kesik olup olmadığını kontrol edin, musluğu sonuna kadar açın ve arka filtre süzgeçlerini temizleyin."
+  },
+  {
+    "hata_kodu": "6A",
+    "marka": "Buderus",
+    "cihaz": "Kombi",
+    "aciklama": "Alev algılanmıyor (Ateşleme hatası).",
+    "cozum": "Gaz vanasını kontrol edin ve reset atın.",
+    "detayli_cozum": "Kombinize gaz gelmiyor olabilir. Ocağınızı yakarak gaz olup olmadığını teyit edin. Gaz vanası açıksa kombi üzerindeki 'Reset' (veya OK) tuşuna 3 saniye basılı tutarak cihazı yeniden başlatın."
+  },
+  {
+    "hata_kodu": "4C",
+    "marka": "Buderus",
+    "cihaz": "Kombi",
+    "aciklama": "Aşırı ısınma termostatı (STB) devrede.",
+    "cozum": "Peteklerin açık olduğundan emin olun.",
+    "detayli_cozum": "Tesisat içindeki su sirküle olamayıp kaynama noktasına gelmiş. En az 3 peteğin vanasının sonuna kadar açık olduğunu kontrol edin. Cihaz soğuduktan sonra resetleyin."
+  },
+  {
+    "hata_kodu": "3C",
+    "marka": "Buderus",
+    "cihaz": "Kombi",
+    "aciklama": "Fan motoru veya presostat arızası.",
+    "cozum": "Bacanın yerinden çıkmadığını kontrol edin.",
+    "detayli_cozum": "Atık gaz sisteminde sorun var. Kombinin bacasının yerinden oynamadığından veya dışarıdan tıkanmadığından emin olun. Sorun devam ederse fan arızası için servis gerekir."
+  },
+  {
+    "hata_kodu": "F4",
+    "marka": "Viessmann",
+    "cihaz": "Kombi",
+    "aciklama": "Brülör ateşlemiyor (Alev oluşumu yok).",
+    "cozum": "Gaz kesintisini kontrol edip cihazı resetleyin.",
+    "detayli_cozum": "Gaz saatinizin vanasının açık olduğundan emin olun. Viessmann cihazlarda resetleme işlemi genellikle iki düğmeye aynı anda basılarak veya menüden 'Reset' seçilerek yapılır."
+  },
+  {
+    "hata_kodu": "F2",
+    "marka": "Viessmann",
+    "cihaz": "Kombi",
+    "aciklama": "Limit termostat arızası (Aşırı ısınma).",
+    "cozum": "Sirkülasyon sorununu giderin.",
+    "detayli_cozum": "Pompa sıkışmış veya petek vanaları kapalı kalmış olabilir. Cihazın yarım saat soğumasını bekleyin. Su basıncının 1.5 bar olduğunu kontrol edip reset atın."
+  },
+  {
+    "hata_kodu": "F0",
+    "marka": "Viessmann",
+    "cihaz": "Kombi",
+    "aciklama": "Su basıncı çok düşük.",
+    "cozum": "Cihaza su basmanız gerekiyor.",
+    "detayli_cozum": "Sistem basıncı 0.8 barın altına düşmüş. Cihazın altındaki doldurma musluğu ile basıncı 1.5 bar seviyesine getirip musluğu sıkıca kapatın."
+  },
+  {
+    "hata_kodu": "F1",
+    "marka": "Protherm",
+    "cihaz": "Kombi",
+    "aciklama": "Ateşleme başarısızlığı (Gaz yokluğu).",
+    "cozum": "Gaz vanalarını açın ve cihazı resetleyin.",
+    "detayli_cozum": "Dairenize gaz geldiğinden emin olun. Kombi gaz valfi açmıyor veya ateşleme çakmağı arızalı olabilir. Reset sonrası düzelmezse anakart veya valf arızasıdır."
+  },
+  {
+    "hata_kodu": "F0",
+    "marka": "Protherm",
+    "cihaz": "Kombi",
+    "aciklama": "Düşük su basıncı uyarısı.",
+    "cozum": "Kombiye 1.5 bar su ekleyin.",
+    "detayli_cozum": "Tesisat suyu azalmış. Doldurma musluğunu kullanarak manometrede ibre 1.5 olana kadar su verin."
+  },
+  {
+    "hata_kodu": "A01",
+    "marka": "Ferroli",
+    "cihaz": "Kombi",
+    "aciklama": "Brülörde alev yok.",
+    "cozum": "Gaz durumunu kontrol edip reset atın.",
+    "detayli_cozum": "Cihaz 3 kez ateşlemeyi denemiş ancak alev oluşmamış. Gaz kapalı olabilir. Reset tuşuna basarak arızayı silin."
+  },
+  {
+    "hata_kodu": "A03",
+    "marka": "Ferroli",
+    "cihaz": "Kombi",
+    "aciklama": "Aşırı sıcaklık koruması devrede.",
+    "cozum": "Tesisat suyunun soğumasını bekleyin.",
+    "detayli_cozum": "Cihaz içindeki su 90 derecenin üzerine çıkmış. Filtreler tıkanmış veya devirdaim pompası arızalanmış olabilir. Soğuduktan sonra resetleyin."
+  },
+  {
+    "hata_kodu": "AL",
+    "marka": "Bosch",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Alarm uyarısı (İç sıcaklık çok yüksek).",
+    "cozum": "Kapakları kapatın ve dolabın soğumasını bekleyin.",
+    "detayli_cozum": "Dolabın kapağı uzun süre açık kalmış veya içine yeni sıcak yiyecekler konmuş olabilir. 'Alarm' tuşuna basarak sesi susturun. Birkaç saat kapağı açmadan bekleyin, sıcaklık normale dönecektir."
+  },
+  {
+    "hata_kodu": "E1",
+    "marka": "Bosch",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Soğutucu bölüm NTC sensör arızası.",
+    "cozum": "Sensör veya kart değişimi için servis çağırın.",
+    "detayli_cozum": "Üst kısmın (soğutucu) sıcaklık sensörü arızalanmış. Dolap ya hiç soğutmaz ya da her şeyi dondurur. Kullanıcının yapabileceği bir işlem yoktur."
+  },
+  {
+    "hata_kodu": "E01",
+    "marka": "Arçelik",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Su taşma / AquaStop hatası.",
+    "cozum": "Cihazın fişini çekin, suyu boşaltın.",
+    "detayli_cozum": "Taban tepsisine su sızmış. Fişi çekin ve cihazı hafifçe öne eğerek suyu boşaltın. Düzelmezse iç hortumlarda yırtık olabilir."
+  },
+  {
+    "hata_kodu": "E02",
+    "marka": "Arçelik",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Su giriş hatası (Cihaz su alamıyor).",
+    "cozum": "Musluğu açın ve giriş hortumunu kontrol edin.",
+    "detayli_cozum": "Çeşme kapalı olabilir. Giriş hortumunun katlanmadığından emin olun. Giriş valfindeki küçük filtre tıkanmış olabilir, fırçayla temizleyin."
+  },
+  {
+    "hata_kodu": "H",
+    "marka": "Arçelik",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Isıtıcı (Rezistans) arızası.",
+    "cozum": "Bulaşıklar ıslak ve soğuk çıkıyorsa servis çağırın.",
+    "detayli_cozum": "Cihaz suyu ısıtamadığı için programı tamamlayamıyor. Boru rezistans veya ısı sensörü değişimi gereklidir."
+  },
+  {
+    "hata_kodu": "E32",
+    "marka": "Profilo",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Dengesiz yük ve sıkma hatası.",
+    "cozum": "Çamaşırları dengeleyip sıkmayı tekrar başlatın.",
+    "detayli_cozum": "Makine sarsıntıyı önlemek için sıkma işlemini iptal etmiş. Kapağı açın, büyük çamaşırları çözüp dağıtın ve sadece 'Sıkma' programını tekrar çalıştırın."
+  },
+  {
+    "hata_kodu": "E29",
+    "marka": "Profilo",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su alma işlemi başarısız.",
+    "cozum": "Su basıncını kontrol edin.",
+    "detayli_cozum": "Musluk kapalı olabilir veya sular kesik olabilir. Su basıncı çok düşükse cihaz belirlenen sürede suyu alamaz ve E29 hatası verir."
+  },
+  {
+    "hata_kodu": "E20",
+    "marka": "Electrolux",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Tahliye (Su boşaltma) hatası.",
+    "cozum": "Alt pompayı temizleyin.",
+    "detayli_cozum": "Sağ alttaki pompa filtresinin kapağını açın. Suyu yavaşça tahliye edip filtrenin içindeki bozuk para, tel, düğme gibi maddeleri çıkarın."
+  },
+  {
+    "hata_kodu": "E10",
+    "marka": "Electrolux",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Makineye su girmiyor.",
+    "cozum": "Giriş valfi ve hortumları kontrol edin.",
+    "detayli_cozum": "Su vanasının tam açık olduğundan emin olun. Gider borusunun ucunun çok aşağıda olmamasına (sifon etkisi yapıp suyu geri kaçırmasına) dikkat edin."
+  },
+  {
+    "hata_kodu": "E40",
+    "marka": "Electrolux",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Kapak açık veya kilit arızası.",
+    "cozum": "Kapağın sıkıca kapandığını doğrulayın.",
+    "detayli_cozum": "Kapağı iterek 'klik' sesini duyun. Eğer kilitlenmiyorsa kapak mandalı kırılmış veya elektronik kilit (PTC) yanmış olabilir."
+  },
+  {
+    "hata_kodu": "E03",
+    "marka": "Hoover",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su boşaltılamıyor.",
+    "cozum": "Tahliye filtresini temizleyin.",
+    "detayli_cozum": "Pompa filtresi tıkalı. Alt taraftaki kapağı açıp temizleyin. Ayrıca duvardaki gider hortumu bağlantısının tıkanmadığından emin olun."
+  },
+  {
+    "hata_kodu": "E02",
+    "marka": "Hoover",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su alma hatası (Ventil arızası).",
+    "cozum": "Muslukları kontrol edin.",
+    "detayli_cozum": "Suların kesik olmadığını doğrulayın. Eğer hortum ve sular sağlamsa makinenin su giriş ventili (elektrikli vana) arızalanmıştır."
+  },
+  {
+    "hata_kodu": "E08",
+    "marka": "Hoover",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Motor takometre arızası.",
+    "cozum": "Kazan dönmüyorsa servis çağırın.",
+    "detayli_cozum": "Motorun hızını ölçen sensör arızalı veya motor kömürleri bitmiş. Cihaz tamburu döndüremez. Motor bakımı gereklidir."
+  },
+  {
+    "hata_kodu": "OE",
+    "marka": "Samsung",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Taşma (Overflow) hatası.",
+    "cozum": "Makineye fazla su dolmuş, tahliye edilmeli.",
+    "detayli_cozum": "Makine su almaya devam ediyor ve kesemiyor olabilir. Su giriş vanasını acilen kapatın ve cihazı resetleyip tahliye yaptırın."
+  },
+  {
+    "hata_kodu": "HE",
+    "marka": "Samsung",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Isıtıcı (Heater) hatası.",
+    "cozum": "Sıcak su gelmiyorsa parça değişimi gereklidir.",
+    "detayli_cozum": "Su istenilen sıcaklığa ulaşmıyor. Rezistans, NTC sensörü veya anakart rölesi arızalanmış olabilir. Bulaşıklar kirli çıkıyorsa yetkili servis çağırın."
+  },
+  {
+    "hata_kodu": "E01",
+    "marka": "Arçelik",
+    "cihaz": "Kombi",
+    "aciklama": "Başarısız ateşleme (Alev yok).",
+    "cozum": "Gaz vanasını açın, kombiyi resetleyin.",
+    "detayli_cozum": "Gaz eksikliğinden kaynaklanır. Kombinin 'Reset' tuşuna 3 saniye basın. 3 deneme sonrası alev almazsa gaz valfi arızası olabilir."
+  },
+  {
+    "hata_kodu": "E03",
+    "marka": "Arçelik",
+    "cihaz": "Kombi",
+    "aciklama": "Aşırı ısınma uyarısı.",
+    "cozum": "Petekleri açın ve cihazın soğumasını bekleyin.",
+    "detayli_cozum": "Sirkülasyon pompası devrede olmadığı için su çok ısınmış. Petek vanalarının açık olduğundan emin olup reset atın."
+  },
+  {
+    "hata_kodu": "E04",
+    "marka": "Arçelik",
+    "cihaz": "Kombi",
+    "aciklama": "Atık gaz (Hava akış) hatası.",
+    "cozum": "Bacanın yerinde olduğunu kontrol edin.",
+    "detayli_cozum": "Fan motoru çalışmıyor veya baca borusu yerinden çıkmış. Karbonmonoksit sızıntısını önlemek için cihaz kendini kapatır."
+  },
+  {
+    "hata_kodu": "SR",
+    "marka": "Vestel",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Sensör arızası uyarısı.",
+    "cozum": "Cihazın fişini çek-tak yapın, devam ederse servis çağırın.",
+    "detayli_cozum": "Buzdolabının içindeki ısı sensörlerinden biri veya birkaçı arızalı. Dolap soğutma performansını düşürebilir."
+  },
+  {
+    "hata_kodu": "LF",
+    "marka": "Vestel",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Dondurucu bölüm yetersiz soğutma.",
+    "cozum": "Kapının tam kapandığından emin olun.",
+    "detayli_cozum": "Dondurucu bölüm sıcaklığı çok yükselmiş. Kapı uzun süre açık kalmış olabilir veya kompresör arızalanmış olabilir."
+  },
+  {
+    "hata_kodu": "LC",
+    "marka": "Vestel",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Soğutucu bölüm yetersiz soğutma.",
+    "cozum": "Dolabın içini çok doldurmayın, hava kanallarını açın.",
+    "detayli_cozum": "Arka taraftaki hava üfleme kanallarının önüne eşya koymuş olabilirsiniz. Dolabın hava sirkülasyonunu rahatlatın."
+  },
+  {
+    "hata_kodu": "F5",
+    "marka": "Vestel",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Yetersiz su girişi.",
+    "cozum": "Musluğu kontrol edip filtreyi temizleyin.",
+    "detayli_cozum": "Bulaşık makinesine yeterli miktarda veya basınçta su gelmiyor. Giriş hortumundaki küçük süzgeci temizleyin."
+  },
+  {
+    "hata_kodu": "F3",
+    "marka": "Vestel",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Sürekli su girişi hatası.",
+    "cozum": "Vana arızalı olabilir, suyu kapatın.",
+    "detayli_cozum": "Makine, ihtiyacı olandan fazla su alıyor ve durduramıyor. Su giriş ventilinin içi kireçlenmiş ve açık kalmış olabilir. Suyu manuel olarak musluktan kapatın."
+  },
+  {
+    "hata_kodu": "F2",
+    "marka": "Vestel",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Atık su boşaltılamıyor.",
+    "cozum": "Gideri ve iç filtreyi temizleyin.",
+    "detayli_cozum": "Lavabonuzun altındaki pis su gideri tıkanmış olabilir. Makinenin iç tabanındaki filtreyi çıkarıp temizleyin."
+  },
+  {
+    "hata_kodu": "F20",
+    "marka": "Miele",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Isıtma hatası (Su ısınmıyor).",
+    "cozum": "Servis çağırın.",
+    "detayli_cozum": "Üst düzey bir cihaz olan Miele'de rezistans veya ısı sensörü arızası yaşandığında ekranda F20 görünür. Orijinal parça değişimi için Miele yetkili servisine başvurun."
+  },
+  {
+    "hata_kodu": "F11",
+    "marka": "Miele",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Tahliye hatası.",
+    "cozum": "Ön pompa kapağını açıp temizleyin.",
+    "detayli_cozum": "Makine suyu boşaltamıyor. Sol veya sağ altta bulunan pompa filtresini saat yönünün tersine çevirerek sökün, pervaneye sıkışan yabancı maddeleri alın."
+  },
+  {
+    "hata_kodu": "F10",
+    "marka": "Miele",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su alma (Water inlet) hatası.",
+    "cozum": "Musluğu kontrol edin.",
+    "detayli_cozum": "Waterproof sistemi devrede olabilir veya musluktan su gelmiyor olabilir. Hortumları kontrol edin."
+  },
+  {
+    "hata_kodu": "F01",
+    "marka": "Beko",
+    "cihaz": "Fırın",
+    "aciklama": "Sıcaklık sensörü (PT100) kopuk veya kısa devre.",
+    "cozum": "Fırını fişten çekin, servis gerekir.",
+    "detayli_cozum": "Fırın iç sıcaklığını ölçemediği için çalışmayı durdurur. Pişirme güvenliği için sensör değişimi yapılmalıdır."
+  },
+  {
+    "hata_kodu": "Calc-Clean",
+    "marka": "Philips",
+    "cihaz": "Buhar Kazanlı Ütü",
+    "aciklama": "Kireç temizleme uyarısı (Işık yanıp sönüyor).",
+    "cozum": "Smart Calc-Clean işlemini uygulayın.",
+    "detayli_cozum": "Ütü kireç temizleme zamanının geldiğini bildiriyor ve buhar vermeyi kesiyor. Ütüyü temizleme kabına oturtun, Calc-Clean tuşuna 2 saniye basılı tutun ve 2 dakika boyunca su/kireç atmasını bekleyin."
+  },
+  {
+    "hata_kodu": "Err 1",
+    "marka": "Tefal",
+    "cihaz": "Actifry",
+    "aciklama": "Fan motoru arızası.",
+    "cozum": "Cihazın fişini çekin, dönen kısımlara engel var mı bakın.",
+    "detayli_cozum": "Sıcak havayı dağıtan pervane (fan) dönemiyor. Cihazı soğumaya bırakın. Düzelmezse motor arızasıdır."
+  },
+  {
+    "hata_kodu": "Err 2",
+    "marka": "Tefal",
+    "cihaz": "Actifry",
+    "aciklama": "Sensör arızası veya aşırı ısınma.",
+    "cozum": "Cihazı yarım saat dinlendirin.",
+    "detayli_cozum": "Pişirme sıcaklığı çok yükseldiğinde güvenlik için cihaz kendini kapatır. Fişten çekip bekleyin."
+  },
+  {
+    "hata_kodu": "Sinyal Yok",
+    "marka": "LG",
+    "cihaz": "Televizyon",
+    "aciklama": "HDMI veya Anten bağlantı hatası.",
+    "cozum": "Bağlantı kablolarını ve kaynağı kontrol edin.",
+    "detayli_cozum": "TV, seçili olan kaynaktan (örn: HDMI 1) görüntü alamıyor. Uydu alıcınızın açık olduğundan ve kablonun TV'ye tam oturduğundan emin olun. Input (Kaynak) tuşundan doğru girişi seçin."
+  },
+  {
+    "hata_kodu": "Kırmızı Işık (2 Kez Yanıp Sönme)",
+    "marka": "Samsung",
+    "cihaz": "Televizyon",
+    "aciklama": "Güç kartı (Power Board) arızası.",
+    "cozum": "TV'yi prizden çekin, servis çağırın.",
+    "detayli_cozum": "TV stand-by ışığının 2 kez periyodik yanıp sönmesi güç besleme kartında veya LED panellerde kısa devre olduğunu gösterir. Elektrik fişini çekip yetkili servisi arayın."
+  },
+  {
+    "hata_kodu": "E05",
+    "marka": "Altus",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Isıtıcı (Rezistans) veya NTC hatası.",
+    "cozum": "Sular soğuk yıkanıyorsa rezistans arızalıdır.",
+    "detayli_cozum": "Cihaz suyu ısıtamıyor. Kısa programlarda sorun fark edilmeyebilir ancak cihaz sıcak su isteyen programları hata vererek durdurur."
+  },
+  {
+    "hata_kodu": "E06",
+    "marka": "Altus",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Motor arızası (Kazan dönmüyor).",
+    "cozum": "Motor kömürü bitmiş olabilir.",
+    "detayli_cozum": "Makine su alıyor ancak yıkamaya geçince kazan hiçbir şekilde dönmüyorsa motor kömürleri bitmiş veya motor kartı yanmıştır."
+  },
+  {
+    "hata_kodu": "Sabit Kırmızı Işık",
+    "marka": "Fakir",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Genel donanım veya sıkışma hatası.",
+    "cozum": "Cihazı düz bir zemine alıp fırçaları kontrol edin.",
+    "detayli_cozum": "Cihaz tekerleklerinin veya fırçalarının sıkıştığını tespit edince kırmızı ışık yakar. Cihazı ters çevirip tekerleklere dolanan maddeleri temizleyin ve cihazı kapatıp açın."
+  },
+  {
+    "hata_kodu": "Er 1",
+    "marka": "Beko",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "AquaStop su taşma hatası.",
+    "cozum": "Makinenin tabanındaki suyu boşaltın.",
+    "detayli_cozum": "Makine su sızdırmış ve alt tepside su birikmiş. Cihazın fişini çekip vanasını kapatın. Makineyi öne doğru eğerek içindeki suyu tahliye edin."
+  },
+  {
+    "hata_kodu": "Er 2",
+    "marka": "Beko",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Su alma arızası.",
+    "cozum": "Şebeke suyunu kontrol edin.",
+    "detayli_cozum": "Cihaz su alamıyor. Su basıncı çok düşük olabilir veya giriş valfi filtresi tıkanmış olabilir."
+  },
+  {
+    "hata_kodu": "F02",
+    "marka": "Profilo",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Dondurucu sensör arızası.",
+    "cozum": "Servis müdahalesi gereklidir.",
+    "detayli_cozum": "Dondurucu (Freezer) bölümünün ısı sensörü arızalı. Dolap dondurma işleminde sorun yaşayacaktır."
+  },
+  {
+    "hata_kodu": "E60",
+    "marka": "Electrolux",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Isıtma sorunu (Sıcaklık artmıyor).",
+    "cozum": "Rezistans değişimi gerekebilir.",
+    "detayli_cozum": "Yıkama suyu ısıtılamıyor. Makine ayarlanan dereceye ulaşamadığı için hata koduna düşer. Rezistansın kireçlenmesi buna sebep olabilir."
+  },
+  {
+    "hata_kodu": "E09",
+    "marka": "Bosch",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Isıtma pompası arızası (Rezistans yanmış).",
+    "cozum": "Isı pompası (motor) değişimi gerekir, servis çağırın.",
+    "detayli_cozum": "Bu cihazlarda rezistans, sirkülasyon motorunun içine entegredir (Isı pompası). E09 hatası rezistansın koptuğunu veya yandığını gösterir. Bulaşıklar soğuk ve ıslak çıkar. Kullanıcı müdahalesi imkansızdır, ısı pompasının komple değişmesi gerekir."
+  },
+  {
+    "hata_kodu": "E19",
+    "marka": "Siemens",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Isı eşanjörü / Su tahliye valfi arızası.",
+    "cozum": "Eşanjör ventili değişimi gerekir.",
+    "detayli_cozum": "Cihazın sol yan panelindeki ısı eşanjörünün altında bulunan boşaltma valfi paslanmış veya yanmış olabilir. Bu hata nadiren anakart arızasını da tetikleyebilir. Fişini çekip servis talep edin."
+  },
+  {
+    "hata_kodu": "E22",
+    "marka": "Profilo",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Filtre tıkalı veya tahliye pompası yavaş çalışıyor.",
+    "cozum": "İç filtreleri ve pompa pervanesini temizleyin.",
+    "detayli_cozum": "Cihaz suyu atıyor ancak atma süresi çok uzun sürüyor. Taban filtresini çıkarın, sıcak su altında bulaşık fırçasıyla temizleyin. Pompa kapağını açıp içinde limon çekirdeği veya cam kırığı olup olmadığını kontrol edin."
+  },
+  {
+    "hata_kodu": "E31",
+    "marka": "Bosch",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Zeolit kurutma sistemi hatası.",
+    "cozum": "Zeolit haznesine su kaçmış veya fan bozulmuş olabilir.",
+    "detayli_cozum": "Zeolit kurutma teknolojisine sahip cihazlarda, kurutma fanının bozulması veya hazneye aşırı su taşması durumunda ortaya çıkar. Kuruma sağlanamaz. Teknik servis müdahalesi şarttır."
+  },
+  {
+    "hata_kodu": "E23",
+    "marka": "Siemens",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Boşaltma pompası elektrik arızası.",
+    "cozum": "Pompa motoru yanmış olabilir, değiştirilmeli.",
+    "detayli_cozum": "Tahliye pompasında elektriksel bir kopukluk veya kısa devre tespit edildi. E24 (Filtre tıkanıklığı) hatasından farklı olarak bu elektriksel bir sorundur."
+  },
+  {
+    "hata_kodu": "F03",
+    "marka": "Beko",
+    "cihaz": "Fırın",
+    "aciklama": "Aşırı ısınma (Emniyet termostatı attı).",
+    "cozum": "Fırının tamamen soğumasını bekleyin.",
+    "detayli_cozum": "Fırın iç sıcaklığı tehlikeli seviyelere ulaştığında soğutma fanı çalışmamış olabilir. Cihaz kendini kilitler. Fişini çekip en az 1 saat bekleyin. Düzelmezse emniyet termostatı manuel olarak resetlenmelidir."
+  },
+  {
+    "hata_kodu": "F04",
+    "marka": "Arçelik",
+    "cihaz": "Fırın",
+    "aciklama": "Anakart iletişim arızası.",
+    "cozum": "Cihazın elektrik fişini çek-tak yapın.",
+    "detayli_cozum": "Ekran kartı ile ana güç kartı haberleşemiyor. Elektrik dalgalanması sebebiyle ekran donmuş olabilir. Cihazı şalterinden veya fişinden kapatıp 5 dakika sonra açın."
+  },
+  {
+    "hata_kodu": "SE",
+    "marka": "Samsung",
+    "cihaz": "Fırın",
+    "aciklama": "Dokunmatik tuş (Keypad) hatası.",
+    "cozum": "Kontrol panelini temizleyin.",
+    "detayli_cozum": "Fırının dokunmatik tuşlarına uzun süre (10 saniyeden fazla) basılı kalınmış veya tuşların üzerine su/yağ dökülmüş. Paneli kuru bir mikrofiber bezle iyice silin."
+  },
+  {
+    "hata_kodu": "C-d0",
+    "marka": "Samsung",
+    "cihaz": "Fırın",
+    "aciklama": "Kapı kilidi veya kapak switch hatası.",
+    "cozum": "Kapağı sertçe açıp tekrar kapatın.",
+    "detayli_cozum": "Pirolitik (Kendi kendini temizleyen) fırınlarda kapı kilitlenemiyorsa veya normal fırınlarda kapağın kapalı olduğu algılanmıyorsa bu hata çıkar."
+  },
+  {
+    "hata_kodu": "E-01",
+    "marka": "Termikel",
+    "cihaz": "Ankastre Fırın",
+    "aciklama": "Sıcaklık algılayıcı sensör (NTC) kısa devre.",
+    "cozum": "Fırını çalıştırmayın, sensör değişmelidir.",
+    "detayli_cozum": "Fırının üst arka kısmında bulunan sıcaklık probu hasar görmüş. Fırın sıcaklığı ölçemediği için çalışmayı durdurur."
+  },
+  {
+    "hata_kodu": "E-02",
+    "marka": "Termikel",
+    "cihaz": "Ankastre Fırın",
+    "aciklama": "PTC sensörü kopuk veya ısınmıyor.",
+    "cozum": "Sensör kablolarında kopukluk, servis gerektirir.",
+    "detayli_cozum": "Termostat görevini yapan parçadan sinyal alınamıyor. Fişten çekip yetkili servisi arayın."
+  },
+  {
+    "hata_kodu": "F05",
+    "marka": "Vestel",
+    "cihaz": "Fırın",
+    "aciklama": "Soğutma fanı çalışmıyor.",
+    "cozum": "Fırını hemen kapatın.",
+    "detayli_cozum": "Fırının üst kısmındaki devreleri soğutan radyal fan bozulmuş. Fırın çalışmaya devam ederse elektronik düğmeleri eritebilir veya kartı yakabilir."
+  },
+  {
+    "hata_kodu": "E04",
+    "marka": "ECA",
+    "cihaz": "Kombi",
+    "aciklama": "Alev sahte (Gaz vanası kapalıyken alev algılanıyor).",
+    "cozum": "Kombiyi resetleyin, anakart arızası olabilir.",
+    "detayli_cozum": "Brülör sönmüş olmasına rağmen iyonizasyon elektrodu alev görmeye devam ediyor (veya kart öyle algılıyor). İyonizasyon çubuğu oksitlenmiş veya anakart arızalanmış olabilir."
+  },
+  {
+    "hata_kodu": "A08",
+    "marka": "ECA",
+    "cihaz": "Kombi",
+    "aciklama": "Alev sinyali yok veya zayıf.",
+    "cozum": "Kombi bacasını ve gazı kontrol edin.",
+    "detayli_cozum": "Cihaz ateşliyor ancak alevi hissetmiyor. İyonizasyon elektrodu kirlenmiş olabilir. Cihazı resetleyin."
+  },
+  {
+    "hata_kodu": "E05",
+    "marka": "ECA",
+    "cihaz": "Kombi",
+    "aciklama": "Kalorifer gidiş sensör (NTC) arızası.",
+    "cozum": "Sensör kablosu kopuk, değişim gerek.",
+    "detayli_cozum": "Kalorifer peteklerine giden suyun sıcaklığını ölçen sensör arızalı. Cihaz petekleri ısıtmaz, sadece sıcak su verebilir."
+  },
+  {
+    "hata_kodu": "E12",
+    "marka": "ECA",
+    "cihaz": "Kombi",
+    "aciklama": "Kullanım suyu sensör (NTC) arızası.",
+    "cozum": "Sıcak su gelmiyorsa sensör arızalıdır.",
+    "detayli_cozum": "Çeşmeye giden sıcak suyun derecesini ayarlayan sensör bozulmuş. Petekler yanar ancak musluktan sıcak su alamazsınız."
+  },
+  {
+    "hata_kodu": "C6",
+    "marka": "Buderus",
+    "cihaz": "Kombi",
+    "aciklama": "Fan devri algılanamıyor.",
+    "cozum": "Atık gaz borusunu (baca) kontrol edin.",
+    "detayli_cozum": "Fan motoru çalışıyor ancak cihaz bunu algılayamıyor veya fan yeterli hıza ulaşamıyor. Presostat (hava akış şalteri) veya fan arızası."
+  },
+  {
+    "hata_kodu": "CE",
+    "marka": "Buderus",
+    "cihaz": "Kombi",
+    "aciklama": "Tesisat basıncı düşük.",
+    "cozum": "Kombinin altındaki doldurma vanası ile su basıncını 1.5 bar yapın.",
+    "detayli_cozum": "Ekranda yanıp sönen bir değerle birlikte CE uyarısı çıkarsa su basıncı yetersiz demektir."
+  },
+  {
+    "hata_kodu": "D4",
+    "marka": "Buderus",
+    "cihaz": "Kombi",
+    "aciklama": "Sıcaklık çok hızlı yükseliyor.",
+    "cozum": "Petek vanalarını açın, pompayı kontrol ettirin.",
+    "detayli_cozum": "Sirkülasyon (devirdaim) pompası çalışmadığı için kombideki su kaynama noktasına doğru çok hızlı yükseliyor. Sistem güvenliğe geçmiş."
+  },
+  {
+    "hata_kodu": "U2",
+    "marka": "Daikin",
+    "cihaz": "Klima",
+    "aciklama": "Düşük voltaj veya yüksek voltaj algılandı.",
+    "cozum": "Elektrik şebekesinin düzelmesini bekleyin.",
+    "detayli_cozum": "Klimaya gelen voltaj çok düşmüş (170V altı) veya çok yükselmiş. Elektronik kartı korumak için cihaz kendini kapatmış."
+  },
+  {
+    "hata_kodu": "U0",
+    "marka": "Mitsubishi",
+    "cihaz": "Klima",
+    "aciklama": "Soğutucu gaz eksikliği.",
+    "cozum": "Servis çağırarak gaz kaçağı kontrolü yaptırın.",
+    "detayli_cozum": "Sistemde gaz azalmış, bu şekilde kullanmak kompresörü yakar."
+  },
+  {
+    "hata_kodu": "P8",
+    "marka": "Mitsubishi",
+    "cihaz": "Klima",
+    "aciklama": "Dış ünite boru sıcaklık sensör hatası.",
+    "cozum": "Klimayı sigortadan kapatıp açın, düzelmezse servis gerekir.",
+    "detayli_cozum": "Dış ünitedeki kondanser borusunun sıcaklığını ölçen sensör kopmuş veya değer kaybetmiş."
+  },
+  {
+    "hata_kodu": "CH21",
+    "marka": "LG",
+    "cihaz": "Klima",
+    "aciklama": "Kompresör aşırı akım (DC Peak) hatası.",
+    "cozum": "Voltajı kontrol edin, kompresör sıkışmış olabilir.",
+    "detayli_cozum": "Dış ünitedeki motor (kompresör) kalkış yapamıyor ve aşırı akım çekiyor. İnverter kart arızası veya kompresör yanması olabilir."
+  },
+  {
+    "hata_kodu": "CH22",
+    "marka": "LG",
+    "cihaz": "Klima",
+    "aciklama": "CT Akım sensörü hatası.",
+    "cozum": "Klimayı çalıştırmayın, kart arızası.",
+    "detayli_cozum": "Elektronik kart üzerindeki akım okuma devresi bozulmuş."
+  },
+  {
+    "hata_kodu": "E6",
+    "marka": "Gree",
+    "cihaz": "Klima",
+    "aciklama": "İç ve dış ünite iletişim (haberleşme) hatası.",
+    "cozum": "Sinyal kablosunu kontrol ettirin.",
+    "detayli_cozum": "İç ve dış ünite arasındaki data kablosunda kopukluk var. Voltaj dalgalanması sonrası şalter kapat-aç ile düzelebilir."
+  },
+  {
+    "hata_kodu": "H6",
+    "marka": "Gree",
+    "cihaz": "Klima",
+    "aciklama": "İç ünite fan motoru çalışmıyor.",
+    "cozum": "Filtreleri söküp fanın dönüp dönmediğine bakın.",
+    "detayli_cozum": "İç ünitedeki uzun silindir şeklindeki fan (blower) sıkışmış veya motoru yanmış. Cihaz soğuk hava üfleyemez."
+  },
+  {
+    "hata_kodu": "F1",
+    "marka": "Gree",
+    "cihaz": "Klima",
+    "aciklama": "İç ünite oda sensörü açık veya kısa devre.",
+    "cozum": "Sensör yerinden çıkmış, servis takmalıdır.",
+    "detayli_cozum": "Klima odanın sıcaklığını algılayamıyor. Soğutmayı durdurur."
+  },
+  {
+    "hata_kodu": "H1",
+    "marka": "Midea",
+    "cihaz": "Klima",
+    "aciklama": "Defrost (Buz çözme) işlemi devrede.",
+    "cozum": "Bir arıza değildir, 10 dakika bekleyin.",
+    "detayli_cozum": "Kışın ısıtma modundayken dış ünite buz tutar. Cihaz içeriye sıcak üflemeyi durdurup dışarıdaki buzu eritir. H1 kodu bu erime işlemi bitene kadar ekranda kalır."
+  },
+  {
+    "hata_kodu": "EC",
+    "marka": "Midea",
+    "cihaz": "Klima",
+    "aciklama": "Gaz kaçağı koruması (Soğutucu akışkan yok).",
+    "cozum": "Cihazı hemen kapatın.",
+    "detayli_cozum": "Boru rekorlarında kaçak var. Sistemde gaz kalmamış."
+  },
+  {
+    "hata_kodu": "Descaling",
+    "marka": "Delonghi",
+    "cihaz": "Kahve Makinesi",
+    "aciklama": "Kırmızı ışık yanıp sönüyor (Kireç temizliği gerekli).",
+    "cozum": "Kireç çözücü (Descaler) sıvısı ile temizlik programını başlatın.",
+    "detayli_cozum": "Cihazın su yollarında kireç birikmiş. Su haznesine kireç çözücü sıvıyı ekleyip, buhar çubuğunun altına büyük bir kap koyun ve kireç temizleme tuşuna 5 saniye basılı tutarak temizliği başlatın."
+  },
+  {
+    "hata_kodu": "Genel Alarm (Ünlem)",
+    "marka": "Delonghi",
+    "cihaz": "Kahve Makinesi",
+    "aciklama": "Kırmızı ünlem işareti sabit yanıyor.",
+    "cozum": "Demleme grubunu (Infuser) yıkayın ve doğru takın.",
+    "detayli_cozum": "Makinenin içindeki kahve presleme mekanizması (demlik) sıkışmış veya doğru oturtulmamış. Cihazı kapatıp demliği çıkarın, suyun altında yıkayıp yerine 'tık' sesi gelecek şekilde takın."
+  },
+  {
+    "hata_kodu": "Fill Beans",
+    "marka": "Philips",
+    "cihaz": "Tam Otomatik Kahve Makinesi",
+    "aciklama": "Çekirdek kahve uyarısı yanıyor ama çekirdek var.",
+    "cozum": "Öğütücü (Değirmen) tıkanmış.",
+    "detayli_cozum": "Çekirdek haznesinde kahve olmasına rağmen öğütmüyorsa, öğütücü bıçaklarının arasına çok yağlı kahve tortusu veya taş sıkışmış olabilir. Elektrik süpürgesi ile haznenin içini çektirmeyi deneyin."
+  },
+  {
+    "hata_kodu": "Water Empty",
+    "marka": "Philips",
+    "cihaz": "Tam Otomatik Kahve Makinesi",
+    "aciklama": "Su haznesi dolu ama uyarı veriyor.",
+    "cozum": "Su haznesinin altındaki manyetik şamandırayı kontrol edin.",
+    "detayli_cozum": "Su tankının içindeki küçük siyah parça (şamandıra) kireçten dolayı sıkışmış. Çalkalayarak veya kireç sökücü ile hareket etmesini sağlayın."
+  },
+  {
+    "hata_kodu": "E01",
+    "marka": "Nespresso",
+    "cihaz": "Kapsül Kahve Makinesi",
+    "aciklama": "Makine ısınmıyor, ışıklar hızlı yanıp sönüyor.",
+    "cozum": "Elektronik kart arızası.",
+    "detayli_cozum": "Cihaz suyu ısıtamadığı için kendini kilitliyor. Nespresso yetkili servisi ile görüşülmelidir."
+  },
+  {
+    "hata_kodu": "Error 2",
+    "marka": "Xiaomi",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Tampon (Bumper) sıkıştı.",
+    "cozum": "Ön tamponu elinizle ittirip bırakın.",
+    "detayli_cozum": "Robotun ön kısmındaki çarpışma tamponu bir yere çarptıktan sonra içeri göçmüş ve eski haline dönmemiş. İki elinizle tampona birkaç kez bas-bırak yaparak yaylarını kurtarın."
+  },
+  {
+    "hata_kodu": "Error 3",
+    "marka": "Xiaomi",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Tekerlekler havada uyarısı.",
+    "cozum": "Robotu düz bir zemine koyup başlatın.",
+    "detayli_cozum": "Cihaz kapı eşiğinde asılı kalmış veya kalın bir halıya çıkıp tekerlekleri boşa dönmüş olabilir."
+  },
+  {
+    "hata_kodu": "Error 13",
+    "marka": "Roborock",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Şarj hatası (Charging Error).",
+    "cozum": "Şarj istasyonunun temas noktalarını silin.",
+    "detayli_cozum": "Robot şarj istasyonunu buluyor ancak şarj alamıyor. İstasyonun üzerindeki 2 metal parlak dişi ve robotun altındaki metal plakaları kuru mikrofiber bezle (veya hafif kolonyalı bezle) silin."
+  },
+  {
+    "hata_kodu": "Error 18",
+    "marka": "Roborock",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Fan (Vakum Motoru) hatası.",
+    "cozum": "Filtreyi temizleyin veya değiştirin.",
+    "detayli_cozum": "Vakum motoru hava çekemiyor veya içine çok fazla toz kaçıp sıkışmış. Toz haznesindeki HEPA filtreyi yıkayıp 24 saat kurutun (veya yenisiyle değiştirin)."
+  },
+  {
+    "hata_kodu": "Blinking Red (4 Kez)",
     "marka": "Sony",
     "cihaz": "Televizyon",
-    "aciklama": "Kırmızı ışık yanıp sönüyor.",
-    "cozum": "Güç resetlemesi yapın.",
-    "detayli_cozum": "1. TV'yi kumandadan kapatın.\n2. Fişini prizden çekin.\n3. TV üzerindeki güç düğmesine (kumandadaki değil) 30 saniye basılı tutun.\n4. Fişi tekrar takıp çalıştırın. Işık belli periyotlarla (örneğin 4 kez, 6 kez) yanıp sönüyorsa donanımsal bir arıza kodudur, servis gerekir."
+    "aciklama": "LED Backlight (Arka aydınlatma) hatası.",
+    "cozum": "Ekranda görüntü yok ama ses varsa LED'ler yanmıştır.",
+    "detayli_cozum": "TV panelinin arkasındaki aydınlatma LED barlarından biri veya birkaçı patlamış. Cihaz korumaya geçip kırmızı ışığı 4 kez yanıp söndürür. Panel açılıp LED değişimi yapılmalıdır."
+  },
+  {
+    "hata_kodu": "Blinking Red (6 Kez)",
+    "marka": "Sony",
+    "cihaz": "Televizyon",
+    "aciklama": "Backlight inverter kartı arızası.",
+    "cozum": "Besleme kartı veya invertör tamiri gerekir.",
+    "detayli_cozum": "LED'lere voltaj gönderen kartta kısa devre tespit edildi."
+  },
+  {
+    "hata_kodu": "Bootloop (Logo'da kalma)",
+    "marka": "LG",
+    "cihaz": "Televizyon",
+    "aciklama": "TV açılış logosunda takılıp kapanıyor.",
+    "cozum": "Yazılım çökmesi veya anakart arızası.",
+    "detayli_cozum": "Cihazın fişini çekin. Kumandadaki OK (veya Menü) tuşuna basılı tutarken fişi takarak Hard Reset menüsüne girmeye çalışın. Olmazsa anakart eMMC çipi arızalıdır."
+  },
+  {
+    "hata_kodu": "No Signal (Sinyal Yok)",
+    "marka": "Samsung",
+    "cihaz": "Televizyon",
+    "aciklama": "Cihaz dahili uydu alıcısından sinyal bulamıyor.",
+    "cozum": "Anten kablosunu kontrol edin.",
+    "detayli_cozum": "Duvardan gelen LNB (Anten) kablosunun ucu (F-Konnektör) gevşemiş olabilir veya LNB ayarlarınız bozulmuş olabilir. Kabloyu sıkıştırın, yağmurlu havalarda çanak antende sorun olabilir."
+  },
+  {
+    "hata_kodu": "E1",
+    "marka": "Dyson",
+    "cihaz": "Hava Temizleyici (Purifier)",
+    "aciklama": "Sensör arızası.",
+    "cozum": "Cihazın fişini çekin.",
+    "detayli_cozum": "Hava kalite algılama (VOC veya Partikül) sensörü hasar görmüş."
+  },
+  {
+    "hata_kodu": "F",
+    "marka": "Dyson",
+    "cihaz": "Hava Temizleyici (Purifier)",
+    "aciklama": "Filtre değişim zamanı geldi.",
+    "cozum": "Filtreyi yenileyin ve sıfırlama yapın.",
+    "detayli_cozum": "Ekranda F (Filter) uyarısı varsa cihazın HEPA veya karbon filtresi dolmuştur. Yeni filtre taktıktan sonra kumandadaki 'Standby' tuşuna 6 saniye basılı tutarak sayacı sıfırlayın."
+  },
+  {
+    "hata_kodu": "E07",
+    "marka": "Beko",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su seviye sensörü (Presostat) hatası.",
+    "cozum": "Kart veya sensör arızası.",
+    "detayli_cozum": "Makine içindeki suyun miktarını ölçemiyor. Sürekli su almaya devam edebilir veya hiç su almayabilir."
+  },
+  {
+    "hata_kodu": "E08",
+    "marka": "Beko",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Triyak kısa devresi (Kart hatası).",
+    "cozum": "Elektronik kart tamiri.",
+    "detayli_cozum": "Ana kart üzerindeki motoru veya pompayı süren elektronik komponent (triyak) yanmış."
+  },
+  {
+    "hata_kodu": "E11",
+    "marka": "Beko",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Motor arızası (Kazan dönmüyor).",
+    "cozum": "Kömür bitmiş veya kablo kopuk.",
+    "detayli_cozum": "Motor hiç hareket etmiyorsa motor soketi oksitlenmiş veya motor fırçaları (kömürleri) bitmiştir."
+  },
+  {
+    "hata_kodu": "E17",
+    "marka": "Beko",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Aşırı köpük algılandı.",
+    "cozum": "Yanlış deterjan kullanılmış.",
+    "detayli_cozum": "Elde yıkama deterjanı konulmuş veya çok fazla deterjan kullanılmış. Makine köpüğü atmak için sürekli tahliye yapar. Fişi çekin, köpük sönene kadar bekleyin."
+  },
+  {
+    "hata_kodu": "1E",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su seviye sensörü (Water Level) hatası.",
+    "cozum": "Sensör hortumu tıkanmış veya delik olabilir.",
+    "detayli_cozum": "Presostat hortumuna su kaçmış veya delinmiş. Makine su seviyesini ölçemiyor."
+  },
+  {
+    "hata_kodu": "3E",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Motor takometre arızası.",
+    "cozum": "Motor devir alamıyor.",
+    "detayli_cozum": "Kazana çok fazla çamaşır yüklenmiş olabilir (Özellikle battaniye). Yükü azaltın. Devam ederse motor kömürü arızasıdır."
+  },
+  {
+    "hata_kodu": "8E",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "MEMS sensörü (Titreşim/Sarsıntı) hatası.",
+    "cozum": "Makine çok sarsılıyor.",
+    "detayli_cozum": "Makinenin ayak dengesi çok bozuk veya taşıma vidaları (arkadaki büyük cıvatalar) sökülmemiş."
+  },
+  {
+    "hata_kodu": "bE1",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Güç düğmesi (Power Button) takılı kaldı.",
+    "cozum": "Düğmeye bas-bırak yapın.",
+    "detayli_cozum": "Paneldeki açma kapatma tuşu içeri göçmüş ve basılı kalmış. Etrafını temizleyip tuşu kurtarmaya çalışın."
+  },
+  {
+    "hata_kodu": "FE",
+    "marka": "LG",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Fazla su algılandı (Taşma).",
+    "cozum": "Suyu kapatın.",
+    "detayli_cozum": "Su giriş ventili bozulmuş ve sürekli su alıyor. Makine taşmayı engellemek için kendi kendine tahliye yapar."
+  },
+  {
+    "hata_kodu": "PE",
+    "marka": "LG",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Basınç şalteri (Su seviye) arızası.",
+    "cozum": "Kart veya sensör arızası.",
+    "detayli_cozum": "Su seviye sensörüne giden hava hortumu tıkanmış veya kart sensörü okuyamıyor."
+  },
+  {
+    "hata_kodu": "CE",
+    "marka": "LG",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Motor aşırı akım (Current Error).",
+    "cozum": "Kısa devre kontrolü.",
+    "detayli_cozum": "Motora veya elektronik karta aşırı elektrik yüklenmiş. Makinenin fişini çekip 10 dk bekleyin."
+  },
+  {
+    "hata_kodu": "E14",
+    "marka": "Bosch",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Su sayacı (Flowmetre) arızası.",
+    "cozum": "Su akış pervanesi sıkışmış.",
+    "detayli_cozum": "Makinenin aldığı su miktarını ölçen tribün dönmüyor. Su basıncı çok yüksekse veya parçada kireçlenme varsa bu hatayı verir. Musluğu hafif kısarak deneyin."
+  },
+  {
+    "hata_kodu": "E17",
+    "marka": "Bosch",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Su seviyesi çok yüksek.",
+    "cozum": "Makine içine çok su almış.",
+    "detayli_cozum": "Giriş valfi suyu zamanında kesememiş. Makineyi resetleyip tahliye yaptırın."
+  },
+  {
+    "hata_kodu": "E25",
+    "marka": "Siemens",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Tahliye pompası tıkalı veya kapağı yok.",
+    "cozum": "Pompa kapağını yerine takın.",
+    "detayli_cozum": "İç filtreyi çıkardığınızda altta kalan beyaz plastik pompa kapağı yerinden çıkmış veya takılmamış. O kapak olmadan makine suyu dışarı itemez."
+  },
+  {
+    "hata_kodu": "F01",
+    "marka": "Demirdöküm",
+    "cihaz": "Kombi",
+    "aciklama": "Aşırı ısınma emniyeti.",
+    "cozum": "Cihazın soğumasını bekleyin.",
+    "detayli_cozum": "Petekler kapalıyken kombi çalıştırılmış veya sirkülasyon pompası sıkışmış. En az 3 peteğin vanasını açın."
+  },
+  {
+    "hata_kodu": "F04",
+    "marka": "Demirdöküm",
+    "cihaz": "Kombi",
+    "aciklama": "İyonizasyon (Alev) hatası.",
+    "cozum": "Gazın açık olduğunu kontrol edin.",
+    "detayli_cozum": "Ateşleme yapılıyor ancak alev oluşmuyor. Gaz vanası, gaz saati pili ve ocağı kontrol edin. Sorun yoksa kombinizi resetleyin."
+  },
+  {
+    "hata_kodu": "F05",
+    "marka": "Demirdöküm",
+    "cihaz": "Kombi",
+    "aciklama": "Hava akış anahtarı (Presostat) arızası.",
+    "cozum": "Bacanın ucunu kontrol edin.",
+    "detayli_cozum": "Atık gaz dışarı atılamıyor veya baca yerinden oynamış. Fan kirlenmesi de bu hataya sebep olur."
+  },
+  {
+    "hata_kodu": "F06",
+    "marka": "Demirdöküm",
+    "cihaz": "Kombi",
+    "aciklama": "Kullanım suyu NTC arızası.",
+    "cozum": "Sıcak su gelmez.",
+    "detayli_cozum": "Sıcak su sensörü kısa devre yapmış. Petekler çalışmaya devam eder ancak banyoya sıcak su gitmez."
+  },
+  {
+    "hata_kodu": "E02",
+    "marka": "Vaillant",
+    "cihaz": "Kombi",
+    "aciklama": "Dönüş suyu NTC arızası.",
+    "cozum": "Sensör kablosu kopuk.",
+    "detayli_cozum": "Peteklerden dönen soğuk suyun sıcaklığını okuyan sensör bozulmuş."
+  },
+  {
+    "hata_kodu": "F33",
+    "marka": "Vaillant",
+    "cihaz": "Kombi",
+    "aciklama": "Basınç şalteri kapanmıyor.",
+    "cozum": "Hava akış sorunu.",
+    "detayli_cozum": "Fan çalışmasına rağmen hava akış şalteri (presostat) kontak kapatmıyor. Baca tıkalı olabilir."
+  },
+  {
+    "hata_kodu": "F75",
+    "marka": "Vaillant",
+    "cihaz": "Kombi",
+    "aciklama": "Pompa çalışınca basınç atlaması yok.",
+    "cozum": "Su basıncı sensörü tıkalı veya pompa arızalı.",
+    "detayli_cozum": "Cihaz suyu çevirmeye başladığında basınç sensörü bu hareketi algılayamıyor. Kombiye su bastıktan sonra resetleyin, düzelmezse su basınç sondası değişmelidir."
+  },
+  {
+    "hata_kodu": "E09",
+    "marka": "ECA",
+    "cihaz": "Kombi",
+    "aciklama": "Gaz valfi geri besleme arızası.",
+    "cozum": "Anakart veya gaz valfi değişimi.",
+    "detayli_cozum": "Gaz valfi elektriksel olarak açık gözüküyor ancak kart bunu doğrulayamıyor."
+  },
+  {
+    "hata_kodu": "E21",
+    "marka": "ECA",
+    "cihaz": "Kombi",
+    "aciklama": "Anakart (ADC) arızası.",
+    "cozum": "Cihazın şalterini kapatıp açın.",
+    "detayli_cozum": "Elektronik beyin hafıza hatası vermiş. Elektrik dalgalanması sebebiyle oluşur."
+  },
+  {
+    "hata_kodu": "AL 01",
+    "marka": "Makel",
+    "cihaz": "Kombi",
+    "aciklama": "Alev yok uyarısı.",
+    "cozum": "Gazı kontrol edin.",
+    "detayli_cozum": "Kombiye gaz girişi sağlanamıyor."
+  },
+  {
+    "hata_kodu": "AL 02",
+    "marka": "Makel",
+    "cihaz": "Kombi",
+    "aciklama": "Limit termostat arızası.",
+    "cozum": "Aşırı ısınma var.",
+    "detayli_cozum": "Petek vanalarını açıp kombinin soğumasını bekleyin."
+  },
+  {
+    "hata_kodu": "E2",
+    "marka": "Uğur",
+    "cihaz": "Derin Dondurucu",
+    "aciklama": "Evaporatör sensör arızası.",
+    "cozum": "Servis çağırın.",
+    "detayli_cozum": "Dondurucu içindeki soğutma peteklerinin (evaporatör) sensörü kopmuş."
+  },
+  {
+    "hata_kodu": "E3",
+    "marka": "Uğur",
+    "cihaz": "Derin Dondurucu",
+    "aciklama": "Kondenser sensör arızası.",
+    "cozum": "Cihazın arkasındaki tel ızgara hava alamıyor.",
+    "detayli_cozum": "Cihazın arka kısmı çok duvara yaslanmış veya toz bağlamış. Sensör aşırı ısınma algılayıp sistemi durdurmuş."
+  },
+  {
+    "hata_kodu": "E1",
+    "marka": "Şenocak",
+    "cihaz": "Derin Dondurucu",
+    "aciklama": "Kabin içi ısı sensörü arızası.",
+    "cozum": "İç sensör değişimi.",
+    "detayli_cozum": "Sensör arızalı olduğu için cihaz sürekli dondurmaya devam edebilir (hiç durmayabilir)."
+  },
+  {
+    "hata_kodu": "CH01",
+    "marka": "LG",
+    "cihaz": "Klima",
+    "aciklama": "İç ünite oda sensörü arızası.",
+    "cozum": "Kabloda kopukluk.",
+    "detayli_cozum": "İç ünitedeki havanın sıcaklığını ölçen termistör arızalanmış."
+  },
+  {
+    "hata_kodu": "CH02",
+    "marka": "LG",
+    "cihaz": "Klima",
+    "aciklama": "İç ünite boru sensörü arızası.",
+    "cozum": "Sensör değişimi.",
+    "detayli_cozum": "İç ünitenin bakır boruları üzerindeki sıcaklık sensörü değerini kaybetmiş."
+  },
+  {
+    "hata_kodu": "CH09",
+    "marka": "LG",
+    "cihaz": "Klima",
+    "aciklama": "İç ünite EEPROM (Hafıza) hatası.",
+    "cozum": "Anakart programı çökmüş.",
+    "detayli_cozum": "Cihazın beynindeki yazılım silinmiş. Kart değişimi veya yeniden yazılım atılması gerekir."
+  },
+  {
+    "hata_kodu": "U3",
+    "marka": "Daikin",
+    "cihaz": "Klima",
+    "aciklama": "Deneme çalışması tamamlanmadı.",
+    "cozum": "Montaj sonrası test yapılmamış.",
+    "detayli_cozum": "Klima yeni takıldıysa servis kumandadan test modunu çalıştırmayı unutmuştur."
+  },
+  {
+    "hata_kodu": "U5",
+    "marka": "Daikin",
+    "cihaz": "Klima",
+    "aciklama": "Uzaktan kumanda ile iletişim hatası.",
+    "cozum": "Kumanda kablolu ise bağlantısını kontrol edin.",
+    "detayli_cozum": "Özellikle salon tipi ve kaset tipi klimalarda duvardaki kumanda ile anakart haberleşemiyor."
+  },
+  {
+    "hata_kodu": "E1",
+    "marka": "Midea",
+    "cihaz": "Klima",
+    "aciklama": "EEPROM parametre hatası.",
+    "cozum": "İç ünite anakart arızası.",
+    "detayli_cozum": "Voltaj kaynaklı anakart hafızası silinmiş."
+  },
+  {
+    "hata_kodu": "E2",
+    "marka": "Midea",
+    "cihaz": "Klima",
+    "aciklama": "Sıfır geçiş (Zero-crossing) sinyali hatası.",
+    "cozum": "Anakart voltajı okuyamıyor.",
+    "detayli_cozum": "Şebeke dalgalanmalarından dolayı elektronik kart şebeke frekansını ölçemiyor."
+  },
+  {
+    "hata_kodu": "E3",
+    "marka": "Midea",
+    "cihaz": "Klima",
+    "aciklama": "İç ünite fan hızı kontrolden çıktı.",
+    "cozum": "Fan motoru hall sensörü bozuk.",
+    "detayli_cozum": "İç ünite fanı ya çok yavaş dönüyor ya da çok hızlı dönüp aniden duruyor."
+  },
+  {
+    "hata_kodu": "CL",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Çocuk kilidi (Child Lock) aktif.",
+    "cozum": "Kilidi kapatın.",
+    "detayli_cozum": "Bir arıza değildir. Ekranda kilit işareti olan iki tuşa aynı anda 3 saniye basılı tutarak çocuk kilidini iptal edebilirsiniz."
+  },
+  {
+    "hata_kodu": "Sud",
+    "marka": "Samsung",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Çok fazla köpük (Suds).",
+    "cozum": "Köpüğün sönmesini bekleyin.",
+    "detayli_cozum": "Makine içinde aşırı köpük algıladı ve köpüğü yok etmek için beklemeye geçti. Doğru deterjan kullandığınızdan emin olun."
+  },
+  {
+    "hata_kodu": "tc",
+    "marka": "LG",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Termistör (Isı sensörü) hatası.",
+    "cozum": "Servis çağırın.",
+    "detayli_cozum": "Bulaşık makinesinin tabanında bulunan ısı algılayıcısı bozulmuş."
+  },
+  {
+    "hata_kodu": "bE",
+    "marka": "LG",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Köpük veya kirlilik uyarısı.",
+    "cozum": "Yanlış deterjan konulmuş olabilir.",
+    "detayli_cozum": "Elde yıkama deterjanı konulduysa makine aşırı köpürür. Makineyi durdurup içini temizleyin."
+  },
+  {
+    "hata_kodu": "E04",
+    "marka": "Vestel",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Taşma (Overflow) emniyeti.",
+    "cozum": "Cihazın alt kısmında su birikmiş.",
+    "detayli_cozum": "Makine gereğinden fazla su alarak taşmış veya alt hazneye sızdırmış."
+  },
+  {
+    "hata_kodu": "E01",
+    "marka": "Vestel",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Kapı switch arızası.",
+    "cozum": "Kapağı kapatın.",
+    "detayli_cozum": "Kapağın kapandığını algılayan kilit veya sensör arızalı."
+  },
+  {
+    "hata_kodu": "E51",
+    "marka": "Electrolux",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Motor güç kartı kısa devresi.",
+    "cozum": "Kartan motor süren devrede arıza.",
+    "detayli_cozum": "Elektriksel bir kısa devre veya su kaçağı sebebiyle kart yanmış."
+  },
+  {
+    "hata_kodu": "E91",
+    "marka": "Electrolux",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Ekran ile güç kartı arasında iletişim yok.",
+    "cozum": "Kablo soketleri oksitlenmiş.",
+    "detayli_cozum": "Üst dokunmatik/ekran paneli ile alt anakart birbirini göremiyor."
+  },
+  {
+    "hata_kodu": "Er:01",
+    "marka": "Teka",
+    "cihaz": "Fırın",
+    "aciklama": "Fırın kapısı tam kilitlenemedi (Pirolitik mod).",
+    "cozum": "Kapağın sıkıştığını kontrol edin.",
+    "detayli_cozum": "Kendi kendini temizleme modundayken güvenlik sebebiyle kapağı kilitlemesi gerekir, kilitleyemezse bu hatayı verir."
+  },
+  {
+    "hata_kodu": "Er:02",
+    "marka": "Teka",
+    "cihaz": "Fırın",
+    "aciklama": "Fırın aşırı sıcak, kapı açılamıyor.",
+    "cozum": "Soğumasını bekleyin.",
+    "detayli_cozum": "Temizlik sonrası iç ısı 300 derecenin altına düşmeden kapak kilidini açmaz."
+  },
+  {
+    "hata_kodu": "Error 7",
+    "marka": "Roborock",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Tekerlek askıda veya sıkışmış.",
+    "cozum": "Tekerlekleri elinizle döndürerek kontrol edin.",
+    "detayli_cozum": "Ana tekerleklerin içine taş veya yabancı cisim girmiş ve dönmesini engelliyor."
+  },
+  {
+    "hata_kodu": "Error 10",
+    "marka": "Roborock",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Filtre tıkalı veya takılı değil.",
+    "cozum": "Toz haznesindeki filtreyi takın.",
+    "detayli_cozum": "Robot içindeki hava akışını hissedemiyor. Filtreyi yıkadıysanız tam kurumadan takmış olabilirsiniz."
+  },
+  {
+    "hata_kodu": "F08",
+    "marka": "Hotpoint Ariston",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Rezistans kısa devresi veya rolesi yapışık.",
+    "cozum": "Su ısıtıcı rölesi arızası.",
+    "detayli_cozum": "Isıtıcı (Rezistans) kısa devre yapmış veya kart üzerindeki rölesi açık konumda yapışıp kalmış."
+  },
+  {
+    "hata_kodu": "F12",
+    "marka": "Hotpoint Ariston",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Ekran kartı ile anakart iletişim hatası.",
+    "cozum": "Fişi çekip bekleyin.",
+    "detayli_cozum": "Cihazın ekranı yanıyor ancak hiçbir tuş tepki vermiyor. Elektronik kart haberleşemiyor."
+  },
+  {
+    "hata_kodu": "E-04",
+    "marka": "Profilo",
+    "cihaz": "Fırın",
+    "aciklama": "Fırın çok sıcak, kontrol sistemi kilitlendi.",
+    "cozum": "Fırının soğumasını bekleyin.",
+    "detayli_cozum": "Elektronik düğmelerin olduğu panel kısmı aşırı ısınmış, koruma amaçlı sistem kilitlenmiş."
+  },
+  {
+    "hata_kodu": "E-10",
+    "marka": "Profilo",
+    "cihaz": "Fırın",
+    "aciklama": "Anakart röle hatası.",
+    "cozum": "Elektronik kart arızası.",
+    "detayli_cozum": "Fırının ısıtıcılarını (rezistanslarını) devreye sokan şalterlerden biri bozulmuş."
+  },
+  {
+    "hata_kodu": "F01",
+    "marka": "Siemens",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Dondurucu bölüm defrost sensör hatası.",
+    "cozum": "Buzluk eritemiyor, manuel eritin.",
+    "detayli_cozum": "No-Frost sisteminin buz eritme sensörü arızalanmış."
+  },
+  {
+    "hata_kodu": "F02",
+    "marka": "Siemens",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Soğutucu bölüm NTC sensörü arızalı.",
+    "cozum": "Sensör değişimi.",
+    "detayli_cozum": "Alt kısım (veya soğutucu kısım) iç sıcaklık sensörü değer göstermiyor."
+  },
+  {
+    "hata_kodu": "E1",
+    "marka": "Kumtel",
+    "cihaz": "Ankastre Fırın",
+    "aciklama": "Üst rezistans kısa devre.",
+    "cozum": "Üst ısıtıcı arızası.",
+    "detayli_cozum": "Fırının tavanında bulunan ısıtıcı çubuk patlamış veya kopmuş."
+  },
+  {
+    "hata_kodu": "E2",
+    "marka": "Kumtel",
+    "cihaz": "Ankastre Fırın",
+    "aciklama": "Alt rezistans arızası.",
+    "cozum": "Alt ısıtıcı bozulmuş.",
+    "detayli_cozum": "Fırın sadece üstten pişiriyor altı pişirmiyorsa, tabanın altındaki görünmez rezistans arızalanmıştır."
+  },
+  {
+    "hata_kodu": "F1",
+    "marka": "Auer",
+    "cihaz": "Kombi",
+    "aciklama": "Aşırı ısınma termostat (Limit) hatası.",
+    "cozum": "Kombinin sirkülasyon pompası sıkışmış.",
+    "detayli_cozum": "Petekleri açın, su basıncının 1.5 olduğundan emin olun."
+  },
+  {
+    "hata_kodu": "F4",
+    "marka": "Auer",
+    "cihaz": "Kombi",
+    "aciklama": "Alev yokluğu veya gaz kesintisi.",
+    "cozum": "Gazı kontrol edin, reset atın.",
+    "detayli_cozum": "Ateşleme sonrası alev oluşmuyor. Gaz vanalarını teyit edin."
   }
 ]
+
+
+
+
