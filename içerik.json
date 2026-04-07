@@ -1,0 +1,114 @@
+[
+  {
+    "hata_kodu": "E1",
+    "marka": "Demirdöküm",
+    "cihaz": "Kombi",
+    "aciklama": "Düşük su basıncı arızası. Sistemde yeterli su dolaşımı sağlanamıyor.",
+    "cozum": "Kombinin su basıncını 1.5 bar seviyesine getirin.",
+    "detayli_cozum": "1. Kombinizin alt kısmına eğilip su doldurma musluğunu (genellikle siyah veya mavi renkli plastik bir vanadır) bulun.\n2. Vanayı yavaşça saat yönünün tersine çevirerek açın. Su sesi duymaya başlayacaksınız.\n3. Gözünüz kombinin üzerindeki basınç göstergesinde (manometre) olsun.\n4. İbre 1.5 ile 2.0 bar arasına geldiğinde vanayı saat yönünde çevirerek sıkıca kapatın.\n5. Kombiniz otomatik olarak çalışmaya başlayacaktır, başlamazsa panelden 'Reset' tuşuna 3 saniye basılı tutun."
+  },
+  {
+    "hata_kodu": "F37",
+    "marka": "Baymak",
+    "cihaz": "Kombi",
+    "aciklama": "Tesisat su basıncı düşük.",
+    "cozum": "Doldurma musluğu ile basıncı 1.5 bar'a yükseltin.",
+    "detayli_cozum": "Kombinin altındaki doldurma vanasını sola çevirerek açın. Manometredeki ibre 1.5-2.0 arasına gelince sağa çevirip kapatın."
+  },
+  {
+    "hata_kodu": "E18",
+    "marka": "Bosch",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su boşaltma hatası. Makine suyu tahliye edemiyor.",
+    "cozum": "Pompa filtresini temizleyin ve tahliye hortumunu kontrol edin.",
+    "detayli_cozum": "1. Makinenin fişini çekin.\n2. Sağ alt köşedeki kapakçığı açın ve tahliye hortumundan kalan suyu bir kaba boşaltın.\n3. Pompa filtresini saat yönünün tersine çevirerek çıkarın.\n4. Filtrenin içindeki cisimleri (bozuk para, toka vb.) temizleyin.\n5. Pervanenin rahat dönüp dönmediğini kontrol edin.\n6. Filtreyi yerine takıp iyice sıkın. Ayrıca arkadaki gider hortumunun ezilmemiş olduğundan emin olun."
+  },
+  {
+    "hata_kodu": "E04",
+    "marka": "Beko",
+    "cihaz": "Çamaşır Makinesi",
+    "aciklama": "Su taşıp tabana dökülmüş veya su kesintisi var.",
+    "cozum": "Su vanalarını kontrol edin, ventilde veya hortumda sorun olabilir.",
+    "detayli_cozum": "Çeşmelerden su geldiğinden emin olun. Giriş hortumunun makineye ve çeşmeye bağlanan kısımlarındaki filtrelerin temiz olduğunu kontrol edin. Sorun devam ederse su giriş ventili arızalı olabilir, servis gerektirir."
+  },
+  {
+    "hata_kodu": "E15",
+    "marka": "Siemens",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Taban tepsisinde su birikmesi. AquaStop devreye girdi.",
+    "cozum": "Su sızıntısı var. Cihazı eğerek suyu boşaltmayı deneyin.",
+    "detayli_cozum": "Cihazın tabanındaki güvenlik şamandırası su algılamış.\n1. Cihazın fişini çekin ve su giriş vanasını kapatın.\n2. Makineyi öne doğru yaklaşık 45 derece eğerek tabanda biriken suyun akmasını sağlayın.\n3. Kuruduktan sonra çalıştırın. Eğer hata hemen veya bir süre sonra tekrarlarsa iç aksamda bir sızıntı vardır (hortum yırtığı, pompa contası vb.), yetkili servis çağrılmalıdır."
+  },
+  {
+    "hata_kodu": "IE",
+    "marka": "LG",
+    "cihaz": "Bulaşık Makinesi",
+    "aciklama": "Su giriş hatası. Yeterli su alınamıyor.",
+    "cozum": "Su vanalarının açık olduğundan ve hortumun bükülmediğinden emin olun.",
+    "detayli_cozum": "Su vanasını tam açın. Su giriş hortumunun bükülmüş veya ezilmiş olup olmadığını kontrol edin. Hortumun makineye bağlandığı yerdeki küçük süzgeci (filtre) fırça ile temizleyin."
+  },
+  {
+    "hata_kodu": "CF",
+    "marka": "Samsung",
+    "cihaz": "Klima",
+    "aciklama": "İletişim arızası. Filtre temizlik uyarısı.",
+    "cozum": "İç ünite filtrelerini temizleyip kumandadan resetleyin.",
+    "detayli_cozum": "Bu bir hata kodundan ziyade filtre temizlik zamanının geldiğini bildiren uyarıdır.\n1. Klimayı kapatın ve kapağı açıp toz filtrelerini çıkarın.\n2. Filtreleri ılık suyla yıkayıp gölgede kurutun.\n3. Yerine taktıktan sonra kumanda üzerinden 'Options' menüsünden 'Filter Reset' veya ilgili düğmeye basarak uyarıyı silin."
+  },
+  {
+    "hata_kodu": "CH05",
+    "marka": "LG",
+    "cihaz": "Klima",
+    "aciklama": "İç ve dış ünite haberleşme hatası.",
+    "cozum": "Sinyal kabloları kontrol edilmeli ve cihaz sigortadan resetlenmelidir.",
+    "detayli_cozum": "1. Klimanın bağlı olduğu şalteri kapatıp 5-10 dakika bekleyin.\n2. Tekrar açtığınızda düzelmiyorsa sinyal kablolarında kopukluk veya kart arızası olabilir. Servis müdahalesi gereklidir."
+  },
+  {
+    "hata_kodu": "E4",
+    "marka": "Arçelik",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Defrost sensörü arızası.",
+    "cozum": "Manuel defrost deneyin veya sensör değişimi yaptırın.",
+    "detayli_cozum": "Cihazın fişini çekip kapıları açık şekilde 24 saat bekleterek tam manuel defrost yapın. Fişi taktıktan sonra hata devam ederse, sensör veya anakart değişimi için servis çağrılmalıdır."
+  },
+  {
+    "hata_kodu": "22E",
+    "marka": "Samsung",
+    "cihaz": "Buzdolabı",
+    "aciklama": "Soğutucu bölüm fan motoru hatası.",
+    "cozum": "Buzlanma fanın dönmesini engelliyor olabilir. Defrost yapın.",
+    "detayli_cozum": "Fan motoru buzlanmadan dolayı sıkışmış olabilir veya motorun kendisi arızalanmıştır. Dolabı boşaltıp fişini çekerek 24 saat kapakları açık bekletin. Düzelmezse fan motoru değişimi gerekir."
+  },
+  {
+    "hata_kodu": "Yok",
+    "marka": "Dyson",
+    "cihaz": "Şarjlı Süpürge",
+    "aciklama": "Mavi ışık yanıp sönüyor ve cihaz çalışmıyor.",
+    "cozum": "Filtre yıkanmalı, batarya şarj edilmeli veya tıkanıklık giderilmeli.",
+    "detayli_cozum": "1. Şarjın dolu olduğundan emin olun.\n2. Filtrenin (mor renkli kısım) temiz ve tamamen kuru olduğundan emin olun (yıkadıktan sonra en az 24 saat kurutulmalı).\n3. Boruda veya motor girişinde tıkanıklık yapabilecek cisimleri temizleyin."
+  },
+  {
+    "hata_kodu": "Error 1",
+    "marka": "Xiaomi",
+    "cihaz": "Robot Süpürge",
+    "aciklama": "Lazer sensör (LDS) hatası.",
+    "cozum": "Üstteki lazer kulesinin serbestçe döndüğünden emin olun.",
+    "detayli_cozum": "Robotun üstündeki yuvarlak çıkıntı (LDS sensörü) sıkışmış olabilir. Parmağınızla yavaşça çevirerek rahat döndüğünden emin olun. İçine toz veya saç kaçmışsa üfleyerek temizlemeyi deneyin."
+  },
+  {
+    "hata_kodu": "E2",
+    "marka": "Philips",
+    "cihaz": "Airfryer",
+    "aciklama": "Sıcaklık sensörü veya fan hatası.",
+    "cozum": "Cihazın soğumasını bekleyin ve etrafında boşluk olduğundan emin olun.",
+    "detayli_cozum": "Cihaz aşırı ısınmış olabilir. Fişini çekip en az 30 dakika soğumasını bekleyin. Cihazın arkasında ve yanlarında hava akışını sağlayacak yeterli boşluk (en az 10 cm) olduğundan emin olup tekrar çalıştırın."
+  },
+  {
+    "hata_kodu": "Blinking Red",
+    "marka": "Sony",
+    "cihaz": "Televizyon",
+    "aciklama": "Kırmızı ışık yanıp sönüyor.",
+    "cozum": "Güç resetlemesi yapın.",
+    "detayli_cozum": "1. TV'yi kumandadan kapatın.\n2. Fişini prizden çekin.\n3. TV üzerindeki güç düğmesine (kumandadaki değil) 30 saniye basılı tutun.\n4. Fişi tekrar takıp çalıştırın. Işık belli periyotlarla (örneğin 4 kez, 6 kez) yanıp sönüyorsa donanımsal bir arıza kodudur, servis gerekir."
+  }
+]
