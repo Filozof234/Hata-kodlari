@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hata Kodları Çözüm Rehberi</title>
+    <style>
+        /* === CSS DEĞİŞKENLERİ (TEMA YÖNETİMİ) === */
+        :root {
+            /* DARK MODE */
+            --bg-body: #121212;
+            --bg-card: #1e1e24;
+            --bg-header: rgba(18, 18, 18, 0.85);
+            --bg-input: #2b2b36;
+            --text-main: #f5f5f5;
+            --text-muted: #a0a0a5;
+            --accent-color: #6366f1; /* İndigo */
+            --accent-hover: #4f46e5;
+            --border-color: #33333d;
+            --modal-overlay: rgba(0, 0, 0, 0.7);
+            --sidebar-bg: #1e1e24;
+            --sidebar-hover: #2b2b36;
+            --brand-color: #f59e0b; /* Marka etiketi rengi (Turuncu/Sarımsı) */
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --transition: all 0.3s ease;
+        }
+
+        /* LIGHT MODE */
+        [data-theme="light"] {
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-header: rgba(255, 255, 255, 0.85);
+            --bg-input: #f1f5f9;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --modal-overlay: rgba(15, 23, 42, 0.5);
+            --sidebar-bg: #ffffff;
+            --sidebar-hover: #f1f5f9;
+            --brand-color: #d97706;
+        }
+
+        /* === GENEL SIFIRLAMALAR === */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* === HEADER === */
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: var(--bg-header);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .icon-btn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+            color: var(--text-main);
+        }
+
+        .icon-btn:hover {
+            background-color: var(--bg-input);
+        }
+
+        .icon-btn svg {
+            width: 24px;
+            height: 24px;
+            fill: currentColor;
+        }
+
+        .search-container {
+            width: 100%;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 0.8rem 1.5rem;
+            padding-left: 3rem;
+            background-color: var(--bg-input);
+            border: 1px solid var(--border-color);
+            border-radius: 50px;
+            color: var(--text-main);
+            font-size: 1rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            fill: var(--text-muted);
+        }
+
+        /* === SIDEBAR (HAMBURGER MENÜ) === */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: -320px;
+            width: 300px;
+            height: 100vh;
+            background-color: var(--sidebar-bg);
+            box-shadow: 4px 0 15px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            transition: left 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid var(--border-color);
+        }
+
+        .sidebar.open {
+            left: 0;
+        }
+
+        .sidebar-header {
+            padding: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .sidebar-header h2 {
+            font-size: 1.2rem;
+            color: var(--text-main);
+        }
+
+        .sidebar-menu {
+            list-style: none;
+            padding: 1rem 0;
+            overflow-y: auto;
+        }
+
+        .sidebar-menu li {
+            padding: 0.8rem 1.5rem;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .sidebar-menu li:hover {
+            background-color: var(--sidebar-hover);
+        }
+
+        .sidebar-menu li.active {
+            border-left: 4px solid var(--accent-color);
+            background-color: rgba(99, 102, 241, 0.1);
+            color: var(--accent-color);
+        }
+
+        .sidebar-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--modal-overlay);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(2px);
+        }
+
+        .sidebar-overlay.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* === ANA İÇERİK === */
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* === KART TASARIMI === */
+        .card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            transition: var(--transition);
+            position: relative; /* Marka etiketi için */
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: var(--accent-color);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        /* MARKA ETİKETİ (YENİ) */
+        .brand-badge {
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background-color: var(--brand-color);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 4px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            z-index: 2;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.75rem;
+            margin-top: 0.5rem; /* Marka etiketi için boşluk */
+        }
+
+        .hata-kodu {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            background: rgba(99, 102, 241, 0.1);
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-md);
+        }
+
+        .cihaz-badge {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-muted);
+            background-color: var(--bg-input);
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+            border: 1px solid var(--border-color);
+        }
+
+        .card-body {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .card-text {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .cozum-box {
+            background-color: var(--bg-input);
+            padding: 1rem;
+            border-left: 3px solid #10b981;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            font-size: 0.95rem;
+        }
+
+        .btn {
+            width: 100%;
+            background-color: var(--accent-color);
+            color: #ffffff;
+            padding: 0.8rem;
+            border-radius: var(--radius-md);
+            font-weight: 600;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            margin-top: auto;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        .no-results {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding: 4rem;
+            color: var(--text-muted);
+            background-color: var(--bg-card);
+            border-radius: var(--radius-lg);
+            border: 1px dashed var(--border-color);
+            font-size: 1.1rem;
+        }
+
+        /* === MODAL (DETAYLI ÇÖZÜM PENCERESİ) === */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--modal-overlay);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            padding: 1rem;
+            backdrop-filter: blur(4px);
+        }
+
+        .modal.open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-content {
+            background-color: var(--bg-card);
+            width: 100%;
+            max-width: 650px;
+            border-radius: var(--radius-lg);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid var(--border-color);
+        }
+
+        .modal.open .modal-content {
+            transform: scale(1);
+        }
+
+        .modal-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .modal-header h2 {
+            font-size: 1.3rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .modal-brand {
+            font-size: 0.9rem;
+            color: var(--brand-color);
+            border: 1px solid var(--brand-color);
+            padding: 2px 8px;
+            border-radius: 12px;
+            text-transform: uppercase;
+        }
+
+        .modal-body {
+            padding: 1.5rem;
+            overflow-y: auto;
+            color: var(--text-main);
+            line-height: 1.8;
+            white-space: pre-line;
+        }
+
+        /* === RESPONSIVE === */
+        @media (max-width: 768px) {
+            header { padding: 1rem; }
+            main { padding: 1rem; }
+            .header-top h1 { font-size: 1.2rem; }
+            .grid-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- SİDEBAR OVERLAY -->
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <!-- SİDEBAR (HAMBURGER MENÜ) -->
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <h2>Kategoriler (Cihazlar)</h2>
+            <button id="closeSidebar" class="icon-btn" aria-label="Kapat">
+                <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+            </button>
+        </div>
+        <ul id="deviceList" class="sidebar-menu">
+            <li data-device="all" class="active">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+                Tüm Cihazlar
+            </li>
+            <!-- JS ile otomatik eklenecek -->
+        </ul>
+    </aside>
+
+    <!-- ÜST MENÜ -->
+    <header>
+        <div class="header-top">
+            <div class="header-left">
+                <!-- Hamburger İkonu -->
+                <button id="openSidebar" class="icon-btn" aria-label="Menü">
+                    <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+                </button>
+                <h1>Hata Çözüm Portalı</h1>
+            </div>
+            
+            <!-- Tema Değiştirme Butonu -->
+            <button id="themeToggle" class="icon-btn" aria-label="Tema Değiştir">
+                <svg id="moonIcon" viewBox="0 0 24 24"><path d="M12 3a9 9 0 109 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 01-4.4 2.26 5.403 5.403 0 01-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+                <svg id="sunIcon" style="display:none;" viewBox="0 0 24 24"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37a.996.996 0 00-1.41 0 .996.996 0 000 1.41l1.06 1.06c.39.39 1.03.39 1.41 0a.996.996 0 000-1.41l-1.06-1.06zm1.06-10.96a.996.996 0 000-1.41.996.996 0 00-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06zM7.05 18.36a.996.996 0 000 1.41.996.996 0 001.41 0l1.06-1.06c.39-.39.39-1.03 0-1.41a.996.996 0 00-1.41 0l-1.06 1.06z"/></svg>
+            </button>
+        </div>
+
+        <div class="search-container">
+            <svg class="search-icon" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            <!-- Arama uyarısı güncellendi -->
+            <input type="text" id="searchInput" class="search-input" placeholder="Hata kodu, cihaz veya marka arayın (Örn: E1, Bosch, Klima)...">
+        </div>
+    </header>
+
+    <!-- ANA İÇERİK (KARTLAR) -->
+    <main>
+        <h2 id="currentCategoryTitle" class="section-title">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-color)" style="margin-right:8px;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+            Tüm Cihaz Hataları
+        </h2>
+        <div id="cardContainer" class="grid-container">
+            <!-- JS ile dolacak -->
+        </div>
+    </main>
+
+    <!-- DETAYLI ÇÖZÜM MODALI -->
+    <div id="solutionModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">
+                    <span id="modalHataKodu" class="hata-kodu"></span>
+                    <span id="modalBrand" class="modal-brand"></span>
+                    <span id="modalCihaz" class="cihaz-badge"></span>
+                </h2>
+                <button id="closeModal" class="icon-btn" aria-label="Kapat">
+                    <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div style="margin-bottom: 15px;">
+                    <strong style="color: var(--text-muted);">Kısa Özet:</strong> <span id="modalOzet"></span>
+                </div>
+                <div style="background: rgba(16, 185, 129, 0.08); padding: 20px; border-radius: 12px; border-left: 4px solid #10b981;">
+                    <h3 style="color:#10b981; margin-bottom:15px; font-size:1.1rem; border-bottom:1px solid rgba(16, 185, 129, 0.2); padding-bottom:8px;">
+                        🔧 Adım Adım Detaylı Çözüm
+                    </h3>
+                    <div id="modalDetay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        /* === DEĞİŞKENLER === */
+        const searchInput = document.getElementById('searchInput');
+        const cardContainer = document.getElementById('cardContainer');
+        const deviceList = document.getElementById('deviceList');
+        const currentCategoryTitle = document.getElementById('currentCategoryTitle');
+        
+        const solutionModal = document.getElementById('solutionModal');
+        const closeModal = document.getElementById('closeModal');
+        const modalHataKodu = document.getElementById('modalHataKodu');
+        const modalCihaz = document.getElementById('modalCihaz');
+        const modalBrand = document.getElementById('modalBrand');
+        const modalOzet = document.getElementById('modalOzet');
+        const modalDetay = document.getElementById('modalDetay');
+
+        const sidebar = document.getElementById('sidebar');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const openSidebarBtn = document.getElementById('openSidebar');
+        const closeSidebarBtn = document.getElementById('closeSidebar');
+
+        const themeToggle = document.getElementById('themeToggle');
+        const moonIcon = document.getElementById('moonIcon');
+        const sunIcon = document.getElementById('sunIcon');
+
+        let hataVerileri = [];
+        let seciliKategori = 'all'; 
+
+        /* === BAŞLATICI === */
+        document.addEventListener('DOMContentLoaded', async () => {
+            temaAyarlariniYukle();
+            await verileriGetir();
+            menuyuOlustur();
+            kartlariEkranaBas(hataVerileri);
+            olayDinleyicileriniEkle();
+        });
+
+        /* === 1. VERİ ÇEKME === */
+        async function verileriGetir() {
+            try {
+                const response = await fetch('icerik.json');
+                if (!response.ok) throw new Error('JSON Okunamadı');
+                hataVerileri = await response.json();
+            } catch (error) {
+                console.log('Yerel yedek veri yükleniyor...');
+                // Tarayıcı güvenliği nedeniyle fetch çalışmazsa diye tüm verileri yedeğe ekledik
+                hataVerileri = [
+                  { "hata_kodu": "E1", "marka": "Demirdöküm", "cihaz": "Kombi", "aciklama": "Düşük su basıncı arızası. Sistemde yeterli su dolaşımı sağlanamıyor.", "cozum": "Kombinin su basıncını 1.5 bar seviyesine getirin.", "detayli_cozum": "1. Kombinizin alt kısmına eğilip su doldurma musluğunu (genellikle siyah veya mavi renkli plastik bir vanadır) bulun.\n2. Vanayı yavaşça saat yönünün tersine çevirerek açın. Su sesi duymaya başlayacaksınız.\n3. Gözünüz kombinin üzerindeki basınç göstergesinde (manometre) olsun.\n4. İbre 1.5 ile 2.0 bar arasına geldiğinde vanayı saat yönünde çevirerek sıkıca kapatın.\n5. Kombiniz otomatik olarak çalışmaya başlayacaktır, başlamazsa panelden 'Reset' tuşuna 3 saniye basılı tutun." },
+                  { "hata_kodu": "F37", "marka": "Baymak", "cihaz": "Kombi", "aciklama": "Tesisat su basıncı düşük.", "cozum": "Doldurma musluğu ile basıncı 1.5 bar'a yükseltin.", "detayli_cozum": "Kombinin altındaki doldurma vanasını sola çevirerek açın. Manometredeki ibre 1.5-2.0 arasına gelince sağa çevirip kapatın." },
+                  { "hata_kodu": "E18", "marka": "Bosch", "cihaz": "Çamaşır Makinesi", "aciklama": "Su boşaltma hatası. Makine suyu tahliye edemiyor.", "cozum": "Pompa filtresini temizleyin ve tahliye hortumunu kontrol edin.", "detayli_cozum": "1. Makinenin fişini çekin.\n2. Sağ alt köşedeki kapakçığı açın ve tahliye hortumundan kalan suyu bir kaba boşaltın.\n3. Pompa filtresini saat yönünün tersine çevirerek çıkarın.\n4. Filtrenin içindeki cisimleri (bozuk para, toka vb.) temizleyin.\n5. Pervanenin rahat dönüp dönmediğini kontrol edin.\n6. Filtreyi yerine takıp iyice sıkın. Ayrıca arkadaki gider hortumunun ezilmemiş olduğundan emin olun." },
+                  { "hata_kodu": "E04", "marka": "Beko", "cihaz": "Çamaşır Makinesi", "aciklama": "Su taşıp tabana dökülmüş veya su kesintisi var.", "cozum": "Su vanalarını kontrol edin, ventilde veya hortumda sorun olabilir.", "detayli_cozum": "Çeşmelerden su geldiğinden emin olun. Giriş hortumunun makineye ve çeşmeye bağlanan kısımlarındaki filtrelerin temiz olduğunu kontrol edin. Sorun devam ederse su giriş ventili arızalı olabilir, servis gerektirir." },
+                  { "hata_kodu": "E15", "marka": "Siemens", "cihaz": "Bulaşık Makinesi", "aciklama": "Taban tepsisinde su birikmesi. AquaStop devreye girdi.", "cozum": "Su sızıntısı var. Cihazı eğerek suyu boşaltmayı deneyin.", "detayli_cozum": "Cihazın tabanındaki güvenlik şamandırası su algılamış.\n1. Cihazın fişini çekin ve su giriş vanasını kapatın.\n2. Makineyi öne doğru yaklaşık 45 derece eğerek tabanda biriken suyun akmasını sağlayın.\n3. Kuruduktan sonra çalıştırın. Eğer hata hemen veya bir süre sonra tekrarlarsa iç aksamda bir sızıntı vardır (hortum yırtığı, pompa contası vb.), yetkili servis çağrılmalıdır." },
+                  { "hata_kodu": "IE", "marka": "LG", "cihaz": "Bulaşık Makinesi", "aciklama": "Su giriş hatası. Yeterli su alınamıyor.", "cozum": "Su vanalarının açık olduğundan ve hortumun bükülmediğinden emin olun.", "detayli_cozum": "Su vanasını tam açın. Su giriş hortumunun bükülmüş veya ezilmiş olup olmadığını kontrol edin. Hortumun makineye bağlandığı yerdeki küçük süzgeci (filtre) fırça ile temizleyin." },
+                  { "hata_kodu": "CF", "marka": "Samsung", "cihaz": "Klima", "aciklama": "İletişim arızası. Filtre temizlik uyarısı.", "cozum": "İç ünite filtrelerini temizleyip kumandadan resetleyin.", "detayli_cozum": "Bu bir hata kodundan ziyade filtre temizlik zamanının geldiğini bildiren uyarıdır.\n1. Klimayı kapatın ve kapağı açıp toz filtrelerini çıkarın.\n2. Filtreleri ılık suyla yıkayıp gölgede kurutun.\n3. Yerine taktıktan sonra kumanda üzerinden 'Options' menüsünden 'Filter Reset' veya ilgili düğmeye basarak uyarıyı silin." },
+                  { "hata_kodu": "CH05", "marka": "LG", "cihaz": "Klima", "aciklama": "İç ve dış ünite haberleşme hatası.", "cozum": "Sinyal kabloları kontrol edilmeli ve cihaz sigortadan resetlenmelidir.", "detayli_cozum": "1. Klimanın bağlı olduğu şalteri kapatıp 5-10 dakika bekleyin.\n2. Tekrar açtığınızda düzelmiyorsa sinyal kablolarında kopukluk veya kart arızası olabilir. Servis müdahalesi gereklidir." },
+                  { "hata_kodu": "E4", "marka": "Arçelik", "cihaz": "Buzdolabı", "aciklama": "Defrost sensörü arızası.", "cozum": "Manuel defrost deneyin veya sensör değişimi yaptırın.", "detayli_cozum": "Cihazın fişini çekip kapıları açık şekilde 24 saat bekleterek tam manuel defrost yapın. Fişi taktıktan sonra hata devam ederse, sensör veya anakart değişimi için servis çağrılmalıdır." },
+                  { "hata_kodu": "22E", "marka": "Samsung", "cihaz": "Buzdolabı", "aciklama": "Soğutucu bölüm fan motoru hatası.", "cozum": "Buzlanma fanın dönmesini engelliyor olabilir. Defrost yapın.", "detayli_cozum": "Fan motoru buzlanmadan dolayı sıkışmış olabilir veya motorun kendisi arızalanmıştır. Dolabı boşaltıp fişini çekerek 24 saat kapakları açık bekletin. Düzelmezse fan motoru değişimi gerekir." },
+                  { "hata_kodu": "Yok", "marka": "Dyson", "cihaz": "Şarjlı Süpürge", "aciklama": "Mavi ışık yanıp sönüyor ve cihaz çalışmıyor.", "cozum": "Filtre yıkanmalı, batarya şarj edilmeli veya tıkanıklık giderilmeli.", "detayli_cozum": "1. Şarjın dolu olduğundan emin olun.\n2. Filtrenin (mor renkli kısım) temiz ve tamamen kuru olduğundan emin olun (yıkadıktan sonra en az 24 saat kurutulmalı).\n3. Boruda veya motor girişinde tıkanıklık yapabilecek cisimleri temizleyin." },
+                  { "hata_kodu": "Error 1", "marka": "Xiaomi", "cihaz": "Robot Süpürge", "aciklama": "Lazer sensör (LDS) hatası.", "cozum": "Üstteki lazer kulesinin serbestçe döndüğünden emin olun.", "detayli_cozum": "Robotun üstündeki yuvarlak çıkıntı (LDS sensörü) sıkışmış olabilir. Parmağınızla yavaşça çevirerek rahat döndüğünden emin olun. İçine toz veya saç kaçmışsa üfleyerek temizlemeyi deneyin." },
+                  { "hata_kodu": "E2", "marka": "Philips", "cihaz": "Airfryer", "aciklama": "Sıcaklık sensörü veya fan hatası.", "cozum": "Cihazın soğumasını bekleyin ve etrafında boşluk olduğundan emin olun.", "detayli_cozum": "Cihaz aşırı ısınmış olabilir. Fişini çekip en az 30 dakika soğumasını bekleyin. Cihazın arkasında ve yanlarında hava akışını sağlayacak yeterli boşluk (en az 10 cm) olduğundan emin olup tekrar çalıştırın." },
+                  { "hata_kodu": "Blinking Red", "marka": "Sony", "cihaz": "Televizyon", "aciklama": "Kırmızı ışık yanıp sönüyor.", "cozum": "Güç resetlemesi yapın.", "detayli_cozum": "1. TV'yi kumandadan kapatın.\n2. Fişini prizden çekin.\n3. TV üzerindeki güç düğmesine (kumandadaki değil) 30 saniye basılı tutun.\n4. Fişi tekrar takıp çalıştırın. Işık belli periyotlarla (örneğin 4 kez, 6 kez) yanıp sönüyorsa donanımsal bir arıza kodudur, servis gerekir." }
+                ];
+            }
+        }
+
+        /* === 2. DİNAMİK HAMBURGER MENÜ === */
+        function menuyuOlustur() {
+            // Veritabanındaki cihaz türlerini bul ve alfabetik sırala
+            const cihazlar = [...new Set(hataVerileri.map(item => item.cihaz))].sort();
+            
+            // Cihazlar için genel bir ikon (plug / fiş ikonu)
+            const iconSvg = `<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M16 7V3h-2v4h-4V3H8v4H6v7.5L9.5 18v3h5v-3l3.5-3.5V7h-2z"/></svg>`;
+
+            cihazlar.forEach(cihaz => {
+                const li = document.createElement('li');
+                li.setAttribute('data-device', cihaz);
+                li.innerHTML = `${iconSvg} ${cihaz}`;
+                deviceList.appendChild(li);
+            });
+        }
+
+        /* === 3. KARTLARI BASMA === */
+        function kartlariEkranaBas(veriler) {
+            cardContainer.innerHTML = '';
+
+            if (veriler.length === 0) {
+                cardContainer.innerHTML = `<div class="no-results">Aradığınız kriterlere uygun kayıt bulunamadı.</div>`;
+                return;
+            }
+
+            veriler.forEach((item, index) => {
+                const article = document.createElement('article');
+                article.className = 'card';
+                // Kartın içine yeni Brand Badge eklendi
+                article.innerHTML = `
+                    <div class="brand-badge">${item.marka}</div>
+                    <div class="card-header">
+                        <span class="hata-kodu">${item.hata_kodu}</span>
+                        <span class="cihaz-badge">${item.cihaz}</span>
+                    </div>
+                    <div class="card-body">
+                        <h2 class="card-title">Sorun Açıklaması</h2>
+                        <p class="card-text">${item.aciklama}</p>
+                        <div class="cozum-box">
+                            <strong>Özet Çözüm:</strong> ${item.cozum}
+                        </div>
+                    </div>
+                    <!-- Tıklanan kartın verisini bulabilmek için marka ve cihazı da gönderiyoruz, çünkü hata kodları farklı markalarda aynı olabilir (Örn: E4) -->
+                    <button onclick="detayGoruntule('${item.hata_kodu}', '${item.marka}', '${item.cihaz}')" class="btn">Detaylı Çözüme Git</button>
+                `;
+                cardContainer.appendChild(article);
+            });
+        }
+
+        /* === 4. GELİŞMİŞ FİLTRELEME (MARKA, KOD, CİHAZ) === */
+        function filtrele() {
+            const aranan = searchInput.value.toLowerCase().trim();
+            
+            const filtrelenmis = hataVerileri.filter(item => {
+                // Arama kutusu artık Marka, Kod ve Cihaz içinde arama yapar
+                const aramaEslesme = item.hata_kodu.toLowerCase().includes(aranan) || 
+                                     item.cihaz.toLowerCase().includes(aranan) ||
+                                     (item.marka && item.marka.toLowerCase().includes(aranan));
+                
+                const kategoriEslesme = seciliKategori === 'all' || item.cihaz === seciliKategori;
+                
+                return aramaEslesme && kategoriEslesme;
+            });
+
+            kartlariEkranaBas(filtrelenmis);
+        }
+
+        /* === 5. DETAYLI ÇÖZÜM MODALI === */
+        window.detayGoruntule = function(kodu, marka, cihaz) {
+            // Sadece hata koduna göre aramak yerine marka ve cihazı da baz alıyoruz (Çakışmaları önlemek için)
+            const data = hataVerileri.find(x => x.hata_kodu === kodu && x.marka === marka && x.cihaz === cihaz);
+            if(!data) return;
+
+            modalHataKodu.textContent = data.hata_kodu;
+            modalBrand.textContent = data.marka;
+            modalCihaz.textContent = data.cihaz;
+            modalOzet.textContent = data.cozum;
+            modalDetay.textContent = data.detayli_cozum;
+
+            solutionModal.classList.add('open');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        function modaliKapat() {
+            solutionModal.classList.remove('open');
+            document.body.style.overflow = ''; 
+        }
+
+        /* === 6. TEMA İŞLEMLERİ === */
+        function temaAyarlariniYukle() {
+            const kayitliTema = localStorage.getItem('tema') || 'dark';
+            document.documentElement.setAttribute('data-theme', kayitliTema);
+            ikonlariGuncelle(kayitliTema);
+        }
+
+        function temaDegistir() {
+            const mevcutTema = document.documentElement.getAttribute('data-theme');
+            const yeniTema = mevcutTema === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', yeniTema);
+            localStorage.setItem('tema', yeniTema);
+            ikonlariGuncelle(yeniTema);
+        }
+
+        function ikonlariGuncelle(tema) {
+            if(tema === 'dark') {
+                moonIcon.style.display = 'block';
+                sunIcon.style.display = 'none';
+            } else {
+                moonIcon.style.display = 'none';
+                sunIcon.style.display = 'block';
+            }
+        }
+
+        /* === 7. SİDEBAR === */
+        function sidebarAc() {
+            sidebar.classList.add('open');
+            sidebarOverlay.classList.add('open');
+        }
+
+        function sidebarKapat() {
+            sidebar.classList.remove('open');
+            sidebarOverlay.classList.remove('open');
+        }
+
+        /* === 8. EVENT LİSTENER'LAR === */
+        function olayDinleyicileriniEkle() {
+            searchInput.addEventListener('input', filtrele);
+
+            deviceList.addEventListener('click', (e) => {
+                const li = e.target.closest('li');
+                if(!li) return;
+
+                document.querySelectorAll('.sidebar-menu li').forEach(el => el.classList.remove('active'));
+                li.classList.add('active');
+
+                seciliKategori = li.getAttribute('data-device');
+                
+                // Başlık ikonunu ve metnini güncelle
+                let baslikMetni = seciliKategori === 'all' ? 'Tüm Cihaz Hataları' : seciliKategori + ' Hataları';
+                let icon = seciliKategori === 'all' 
+                    ? `<svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-color)" style="margin-right:8px;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>`
+                    : `<svg width="24" height="24" viewBox="0 0 24 24" fill="var(--accent-color)" style="margin-right:8px;"><path d="M16 7V3h-2v4h-4V3H8v4H6v7.5L9.5 18v3h5v-3l3.5-3.5V7h-2z"/></svg>`;
+                
+                currentCategoryTitle.innerHTML = icon + baslikMetni;
+                
+                filtrele();
+                if(window.innerWidth <= 768) sidebarKapat(); // Sadece mobilde otomatik kapat
+            });
+
+            closeModal.addEventListener('click', modaliKapat);
+            solutionModal.addEventListener('click', (e) => {
+                if(e.target === solutionModal) modaliKapat();
+            });
+
+            openSidebarBtn.addEventListener('click', sidebarAc);
+            closeSidebarBtn.addEventListener('click', sidebarKapat);
+            sidebarOverlay.addEventListener('click', sidebarKapat);
+            themeToggle.addEventListener('click', temaDegistir);
+        }
+    </script>
+</body>
+</html>
+
+
+
